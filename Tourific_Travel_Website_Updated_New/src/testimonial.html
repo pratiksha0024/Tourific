@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+	<meta charset="UTF-8">
+
+	<!-- Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Tourific Travel - Reviews</title>
+
+    <meta name="title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="keywords" content="travel HTML template, tour booking template, Tailwind travel website, tourism Tailwind template, holiday booking, responsive travel design, tour operator website, Travlla template, modern travel design, travel agency web design">
+    <meta name="author" content="DexignZone">
+    <meta name="robots" content="index, follow">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://travlla.dexignzone.com/tailwind/demo/testimonial.html">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta property="og:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta property="og:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+    <meta property="og:url" content="https://travlla.dexignzone.com/demo/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Travlla">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="twitter:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="twitter:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+
+    <!-- IE Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="assets/icons/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/flaticon/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/feather/css/feather.css">
+		
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/flatpickr/css/flatpicker.css">
+	<link rel="stylesheet" href="assets/css/lc_lightbox.css">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="assets/vendor/lightgallery/dist/css/lightgallery-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* ===== Header logos ===== */
+    .tf-logo-main { height: 64px; width: auto; max-width: none; object-fit: contain; }
+    .tf-logo-side { height: 60px; width: auto; max-width: none; object-fit: contain; }
+    @media (min-width: 640px)  { .tf-logo-main { height: 72px; } .tf-logo-side { height: 68px; } }
+    @media (min-width: 1024px) { .tf-logo-main { height: 96px; } .tf-logo-side { height: 90px; } }
+
+    /* ===== Footer logo ===== */
+    .tf-footer-logo { width: 100%; max-width: 200px; height: auto; }
+
+    /* ===== General mobile safety ===== */
+    html, body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    @media (max-width: 767px) {
+        .tf-footer-contact a,
+        .tf-footer-contact span { word-break: break-word; overflow-wrap: anywhere; }
+        .tf-footer-col { text-align: left; }
+    }
+
+    /* ===== Traveller Stories / Video grid ===== */
+    .tr-video-section { padding: 70px 0; background: #fff; }
+    .tr-video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 1024px) { .tr-video-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px)  { .tr-video-grid { grid-template-columns: 1fr; } }
+    .tr-video-card { position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 9 / 16; background: #0c0c0c; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    .tr-video-card video { width: 100%; height: 100%; object-fit: cover; display: block; background: #000; }
+    .tr-video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.92); display: flex; align-items: center; justify-content: center; color: #066168; font-size: 20px; pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,0.25); }
+    .tr-video-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 16px; background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0)); color: #fff; font-weight: 600; font-size: 15px; line-height: 1.35; }
+</style>
+
+<body id="bg" class="selection:bg-[#484848] selection:text-white">
+    
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+
+<!-- Curser Pointer -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<div class="page-wraper">
+	<!-- HEADER START -->
+	<header class="site-header sticky-header absolute lg:left-8.75 lg:right-8.75 lg:top-8.75 left-0 right-0 top-0 duration-500 z-999 [.site-header.is-fixed]:fixed [.site-header.is-fixed]:animate-header-scroll-animation [.site-header.is-fixed]:bg-primary [.site-header.is-fixed]:rounded-b-3xl [.site-header.is-fixed]:top-0">
+        <div class="main-bar-wraper">
+            <div class="w-full lg:min-h-30 min-h-20 lg:ps-8.75 px-4 lg:pe-13.75 duration-500 rounded-5xl flex items-center justify-between">
+                <div class="flex relative w-full items-center">
+
+                    <!-- MAIN LOGO -->
+                    <div class="flex items-center relative z-9 h-20 shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-logo-main duration-500">
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="xmenu-toggler lg:hidden float-right mt-4.5 mb-4 md:ml-7 ml-4 size-11 bg-dark-600 relative cursor-pointer max-lg:order-1" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-3.25 w-5.5"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-0 top-5.5 w-6.25"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-8 w-4"></span>
+                    </button>
+                    <div class="lg:hidden fixed top-0 left-0 bg-black size-full duration-300 z-999 opacity-0 visible pointer-events-none menu-close fade-overlay"></div>
+
+                    <!-- NAVIGATION -->
+                    <div class="flex lg:justify-center lg:basis-auto lg:grow max-lg:flex-col justify-start font-base max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white dark:max-lg:bg-dark max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 header-nav custom-scroll">
+                        <div class="flex items-center relative z-9 py-6.25 lg:hidden">
+                            <a href="index.html" class="table-cell align-middle">
+                                <img src="assets/images/tourific-logo.png" alt="Tourific" class="object-contain duration-500 max-w-30 block">
+                            </a>
+                        </div>
+                        <ul class="lg:flex flex-wrap navbar-nav">
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="index.html"><span class="inline-block">Home</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="about-1.html"><span class="inline-block">About Us</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary after:ml-1 after:-mt-1 after:inline-block after:size-2.5 after:bg-arrow-down after:bg-no-repeat after:bg-bottom max-lg:after:hidden" href="tour-1-grid.html"><span class="inline-block">Tours</span><i class="fas fa-chevron-right lg:!hidden !block size-7 !leading-7 text-center text-xs bg-black text-white float-end"></i></a>
+                                <ul class="lg:absolute bg-white dark:bg-dark lg:rounded-xxl block lg:left-0 max-lg:ps-3.75 w-full lg:w-55 lg:opacity-0 lg:invisible lg:translate-y-10 z-10 mt-0 text-left duration-500 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0 max-lg:hidden sub-menu">
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="tour-1-grid.html"><span>Domestic</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="international.html"><span>International</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="wildlife.html"><span>Wildlife</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="services.html"><span class="inline-block">Services</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="testimonial.html"><span class="inline-block">Reviews</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="videos.html"><span class="inline-block">Videos</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="gallery.html"><span class="inline-block">Gallery</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="contact.html"><span class="inline-block">Contact</span></a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden block max-lg:p-5 text-center mt-auto">
+                            <ul>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-facebook-f" target="_blank" href="https://www.facebook.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-twitter" target="_blank" href="https://twitter.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-instagram" target="_blank" href="https://www.instagram.com"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE LOGO -->
+                    <div class="flex lg:justify-end items-center z-9 h-20 xl:pl-8 ms-auto shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-kashi-logo.png" alt="Tourific Mangalmay Kashi" class="tf-logo-side">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+	<!-- HEADER END -->
+	
+	<div id="smooth-wrapper">
+		<div id="smooth-content">
+			<!-- CONTENT START -->
+			<div class="page-content">
+				<!-- INNER PAGE BANNER -->
+				<div class="relative bg-cover bg-center w-full bg-white overflow-hidden" style="background-image: url('assets/images/background/hero-banner-reviews.jpg');">
+						<div class="opacity-100 absolute left-0 top-0 size-full"></div>
+						<div class="flex w-full lg:h-160 md:h-135 h-100 pb-10 items-baseline mx-auto">
+							<div class="relative md:mt-60 mt-45 flex items-center justify-center w-full flex-col z-5">
+								<div class="tf-hero-glass">
+									<div>
+									<h2 class="tf-hero-title lg:text-120 md:text-104 text-56 relative text-white!">Reviews</h2>
+								</div>
+								<!-- BREADCRUMB ROW -->                            
+								<div>
+									<ul class="tf-hero-breadcrumb inline-block">
+										<li class="tf-breadcrumb-home md:text-32 text-24 relative inline-block font-semibold text-white">
+											<a href="index.html" class="text-white hover:text-citrusyellow duration-300">Home</a></li>
+									</ul>
+								</div>
+								</div>
+							</div>
+							<!-- BREADCRUMB ROW END -->                        
+						</div>
+						<div class="h-50 w-full absolute top-50 left-0 z-1">            
+							<div class="inline-block whitespace-nowrap animate-moveCloud">
+								<img src="assets/images/inr-banner-cloud.png" alt="Image" class="h-47.5">
+							</div>
+						</div>
+						<div class="absolute w-1/2 right-0 top-0 bottom-0 z-1">
+							<div class="mt-60 animate-slide-right"><img src="assets/images/airplane.png" alt="Image" class="animate-slide-top-fast" width="378" height="146"></div>
+						</div>
+						<div class="absolute right-11.25 bottom-16.25 animate-slide-top2"><img src="assets/images/hotballon-Left.png" alt="Image" class="md:w-21 w-10" width="84" height="121"></div>
+						<div class="absolute md:-right-15 -right-10 top-41.25 animate-slide-top"><img src="assets/images/hotballon-right.png" alt="Image" class="md:w-37.5 w-20"
+						width="230" height="333"></div>
+					</div>
+				<!-- INNER PAGE BANNER END -->
+
+				<!-- TRAVELLER STORIES / VIDEO GRID START -->
+				<div class="tr-video-section">
+					<div class="container">
+						<div class="sm:mb-15 mb-7.5 max-w-150 mx-auto text-center">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Traveller<span class="text-citrusyellow"> Stories</span></h2>
+							<div class="text-base">More candid moments from journeys planned by Tourific Travel.</div>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert" width="470" height="70" loading="lazy">
+							</div>
+						</div>
+						<div class="tr-video-grid">
+								<div class="tr-video-card">
+									<video poster="assets/images/tour/kashmir.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-1.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Sunrise over Dal Lake, Kashmir</div>
+								</div>
+								<div class="tr-video-card">
+									<video poster="assets/images/tour/leh-ladakh.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-2.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Road trip to Pangong Lake, Ladakh</div>
+								</div>
+								<div class="tr-video-card">
+									<video poster="assets/images/wildlife/tadoba.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-3.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Tiger spotted at Tadoba Safari</div>
+								</div>
+								<div class="tr-video-card">
+									<video poster="assets/images/tour/rajasthan.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-4.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Forts & palaces of Rajasthan</div>
+								</div>
+								<div class="tr-video-card">
+									<video poster="assets/images/tour/kerala.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-5.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Backwaters cruise, Kerala</div>
+								</div>
+								<div class="tr-video-card">
+									<video poster="assets/images/kashi/kashi-hero.jpg" controls preload="none" playsinline>
+										<source src="assets/videos/travel-story-6.mp4" type="video/mp4">
+									</video>
+									<div class="tr-video-play"><i class="fa-solid fa-play"></i></div>
+									<div class="tr-video-caption">Evening Aarti at Kashi Ghats</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<!-- TRAVELLER STORIES / VIDEO GRID END -->
+
+
+				<!--TESTIMONIAL SECTION START-->
+				<div class="sm:py-22.5 py-10 relative overflow-hidden bg-white dark:bg-dark">
+					<div class="container">
+						<!-- TITLE START-->
+						<div class="text-center max-w-150 mx-auto xl:mb-15 mb-0">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Our Client<span class="text-citrusyellow"> Says!</span></h2>
+							<p class="text-base">Destinations worth exploring! Here are a few popular spots</p>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert" width="470" height="70" loading="lazy">
+							</div>
+						</div>
+						<!-- TITLE END-->
+						<div>
+							<div class="text-center relative font-bold 2xl:text-40xl/48 xl:text-30xl/48 lg:text-80 max-lg:mb-7.5 sm:text-6xl text-40 tracking-[0.12em] uppercase bg-primary-gradient bg-clip-text 
+							[-webkit-text-fill-color:transparent] 
+							bg-[linear-gradient(to_bottom,#066168_15%,rgba(255,170,13,0.3019607843)_60%,#fff_85%)]">
+								Testimonial
+								<img src="assets/images/airplane-takeoff1.png" alt="Image" class="absolute xl:-top-5 sm:-top-6 top-0 left-1/2 -translate-x-1/2 max-xl:w-[40%] max-md:w-[60%]" width="493" height="116" loading="lazy">
+							</div>
+
+							<div class="relative">
+								<!--Image Slider-->
+								<div class="swiper testimonial-content-sld">
+									<div class="swiper-wrapper">
+										<!--1-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic1.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Amelia Warner</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="img" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-full" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														Once the travel bug bites, there is no known antidote, and I know that I shall be happily infected until the end of my life. A journey is best measured in friends.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--2-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic2.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Kavin Martin</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Travler</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														I Was Very Impresed Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta mauris.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--3-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic3.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Antonio</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														Travel bug bites, there is no known antidote, and I know that I shall be happily infected until the end of my life. A journey is best measured in friends.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									   <!--1-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic1.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Amelia Warner</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														Once the travel bug bites, there is no known antidote, and I know that I shall be happily infected until the end of my life. A journey is best measured in friends.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--2-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic2.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Kavin Martin</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Travler</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														I Was Very Impresed Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta mauris.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--3-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic3.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28lg:!text-36 !text-28 !font-normal text-primary mb-0">Antonio</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														Travel bug bites, there is no known antidote, and I know that I shall be happily infected until the end of my life. A journey is best measured in friends.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--3-->
+										<!--2-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic2.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Kavin Martin</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Travler</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														I Was Very Impresed Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta mauris.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--3-->
+										<div class="swiper-slide">
+											<div class="md:flex items-center bg-white dark:bg-dark">
+												<div class="mb-0 relative lg:max-w-93.75 max-w-62.5 z-1 lg:mr-23.75 md:mr-7.5 max-md:mx-auto max-md:mb-7.5 before:absolute before:size-95 before:rounded-full before:bg-citrusyellow before:opacity-10 before:-right-23.5 before:top-1/2 before:-translate-y-1/2 before:-z-1 after:absolute after:size-82.5 after:rounded-full after:bg-primary after:-right-10.5 after:top-1/2 after:-translate-y-1/2 after:-z-1 max-lg:after:hidden max-lg:before:hidden">
+													<img src="assets/images/trv-testimonial2/pic3.jpg" alt="Image" class="rounded-3xl" width="375" height="489" loading="lazy">
+												</div>
+												<div class="lg:max-w-122.5 max-w-85 ml-auto max-lg:mr-auto max-md:mx-auto">
+													<div class="flex items-center justify-between mb-6.25 max-sm:flex-col max-sm:text-center sm:items-start">
+														<div>
+															<h2 class="!font-display lg:!text-36 !text-28 !font-normal text-primary mb-0">Antonio</h2>
+															<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+														</div>
+														<div>
+															<img src="assets/images/trv-icon/Quote.png" alt="image" class="lg:max-w-17.5 max-w-11 max-h-14.5 w-fulll" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%)" width="70" height="58" loading="lazy">
+														</div>
+													</div>
+													<p class="font-title lg:text-2xl text-lg text-primary mb-5 max-lg:pr-7.5 max-md:pr-0 dark:text-paleaqua">
+														Travel bug bites, there is no known antidote, and I know that I shall be happily infected until the end of my life. A journey is best measured in friends.
+													</p>
+													<div class="md:float-right text-citrusyellow text-base mr-0.75">
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+														<i class="fa-solid fa-star"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="testimonial-content-sld-control">
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+								</div>
+								<!--Thumbnail Slider-->
+								<div class="swiper testimonial-thum-sld xl:h-92.5 h-auto !overflow-hidden xl:w-28.75 w-62.5 xl:!absolute xl:top-1/2 top-auto xl:left-128.75 left-0 xl:-translate-y-1/2 transform-none max-xl:mt-5 xl:!mx-auto md:!mx-0 !mx-auto !relative">
+									<div class="swiper-wrapper xl:flex-col">
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic1.jpg" alt="Image" class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic2.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic3.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+									   </div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic4.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic1.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic2.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic3.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="duration-500">
+												<img src="assets/images/trv-testimonial2/pic4.jpg" alt="Image"  class="duration-500 size-19 object-cover object-center rounded-xl cursor-pointer" width="76" height="76" loading="lazy">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="absolute -right-13.75 top-2/5 w-27.5 animate-slide-top"><img src="assets/images/hotballon-right.png" alt="image"></div>
+				</div>
+				<!--TESTIMONIAL SECTION End-->
+				
+				<!-- CLIENT LOGO SECTION START -->
+				<div class="p-5 bg-light">
+					<div class="py-5 bg-white border-4 border-dashed border-paleaqua dark:bg-white/10 dark:border-paleaqua/40">
+						<div class="container">
+							<div class="grid grid-cols-12 items-center">
+								<div class="xl:col-span-3 col-span-12">
+									<div>
+										<h2 class="!font-black !leading-[1] xl:text-46 md:text-40 text-3xl max-xl:mb-5 max-xl:text-center"><span class="!font-base text-citrusyellow block text-5xl !font-black">1K+ </span>Brands Trust Us</h2>
+									</div>
+								</div>
+								<div class="xl:col-span-9 col-span-12">
+									<div class="swiper brand-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/1.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="339" height="82" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/2.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="232" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/3.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="389" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/4.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="219" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/5.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="211" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/1.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="339" height="81" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/2.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="232" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/3.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="339" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/4.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="219" height="91" loading="lazy"></a>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="text-center">
+													<a href="about-1.html"><img src="assets/images/client-logo/dark/5.png" class="w-auto h-11.25 mx-auto opacity-40 dark:invert dark:opacity-80" alt="img" width="211" height="91" loading="lazy"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- CLIENT LOGO  SECTION End -->
+				
+				<div class="xl:pt-30 pt-12.5 xl:pb-26.5 pb-5 relative bg-white dark:bg-dark">
+					<div class="container">
+						<!-- TITLE START-->
+						<div class="sm:mb-15 mb-7.5 max-w-150 mx-auto text-center">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Our CLient<span class="text-citrusyellow"> Says!</span></h2>
+							<div class="text-base">Destinations worth exploring! Here are a few popular spots</div>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert" width="470" height="70" loading="lazy">
+							</div>
+						</div>
+						<!-- TITLE END-->
+						<div class="grid grid-cols-12">
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic1.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Amelia Warner</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic2.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Amelia Warner</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic3.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Amelia Warner</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div>  
+							</div>
+							
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic4.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+		
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Kavin Martin</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Traver</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic5.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+		
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Amelia Warner</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div> 
+							</div>
+							
+							<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic6.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+		
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Kavin Martin</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Traver</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+											I Was Very Impresed Lorem posuere in miss drana en the nisan semere 
+											sceriun amiss etiam ornare in the miss drana is lorem fermen nunta 
+											mauris.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- CONTENT END -->
+			
+			<!-- FOOTER START -->
+			<footer class="pt-20 bg-primary bg-cover bg-[url(../images/background/ftr-dark-bg.png)]">
+                <div class="container">
+                    <div class="sm:pt-20 pt-6 pb-4 text-white/06 border-b border-primary dark:border-white/15">
+                        <div class="grid grid-cols-12 gap-y-6">
+
+                            <!-- Logo + About + Social -->
+                            <div class="lg:col-span-3 col-span-12 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <div class="mb-6 block">
+                                        <a href="index.html"><img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-footer-logo" loading="lazy"></a>
+                                    </div>
+                                    <p class="sm:pr-6 mb-4 text-base text-white">Tourific Travel Services is a multifaceted travel agency and tour operator providing totally reliable competitively tour and travel solutions.</p>
+                                    <ul class="mt-5 flex flex-wrap gap-y-2">
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Quick Links</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="index.html">Home</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="about-1.html">About Us</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="tour-1-grid.html">Domestic</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="international.html">International</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="wildlife.html">Wildlife</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Explore -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Explore</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="services.html">Services</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="testimonial.html">Reviews</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="videos.html">Videos</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="gallery.html">Gallery</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact Us -->
+                            <div class="lg:col-span-5 col-span-12 sm:px-3.75 tf-footer-col tf-footer-contact">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Contact Us</h3>
+                                    <ul>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-phone text-lg text-white"></i>
+                                            </div>
+                                            <a href="tel:+919021135384"><span class="text-xl text-citrusyellow font-semibold">+91 9021135384</span></a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-envelope text-lg text-white"></i>
+                                            </div>
+                                            <a class="text-paleaqua font-semibold text-base" href="mailto:archana@tourific.in">archana@tourific.in</a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Pune:- </b>397/1/2, Building No. 7A, Flat No.2, 'Agrasen Nagar' Housing Society, Kundan Nagar, Opp. Atlas Copco, Dapodi, Pune-411012</span>
+                                        </li>
+                                        <li class="relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Nashik:- </b>SHREE SATYANARAYAN ROONGTA FORUM Shop No.6001 Near City Center Mall, Dr. Babasaheb Ambedkar Rd, near DR BR, Lavate Nagar, Parijat Nagar, Nashik, Maharashtra 422005</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="py-10 text-white relative z-1 font-normal after:absolute after:bg-primary after:max-w-135 after:h-px after:left-1/2 after:top-0 after:-translate-x-1/2">
+                        <div class="container">
+                            <p class="copyrights-text text-center text-sm font-semibold">© <span class="current-year">2026</span> <a href="index.html"><span class="inline-block text-citrusyellow uppercase text-center text-sm font-semibold">Tourific Travel</span></a> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+			<!-- FOOTER END -->
+		</div>
+	</div>
+	<!-- BUTTON TOP START -->
+	<button class="scroltop" aria-label="Scroll to top"><span class="fa fa-angle-up  relative" id="btn-vibrate" aria-hidden="true"></span></button>
+	<div id="offcanvas-right" class="fixed top-0 right-0 z-9999999 h-screen overflow-y-auto transition-transform translate-x-full bg-black/20 backdrop-blur-[5px] sm:max-w-125 max-w-88 custom-scroll">
+		<button type="button" class="absolute right-0 top-6 text-[#443935] bg-citrusyellow text-base size-7 cursor-pointer rounded m-6.25" data-drawer-hide="offcanvas-right" aria-label="Close">
+			<i class="fa-solid fa-xmark" aria-hidden="true"></i>
+		</button>
+		<div class="pt-30 pb-10 px-8">
+			<div class="">
+				<div class="mb-15">
+					<img src="assets/images/logo-dark.png" alt="Image" class="max-w-33.5">
+				</div>
+				<div class="trv-side-pnl-content">
+					<div class="mb-15">
+						<h3 class="text-28 !text-white mb-5">It's Time to Traveling</h3>
+						<h3 class="!text-secondary text-5xl mb-5 uppercase">Plan Your Next Holiday</h3>
+						<p class="text-base !text-white/50">Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing.</p>   
+					</div>
+					<h3 class="text-28 !text-white mb-5">Don't miss out this offers!</h3>
+					<ul class="flex justify-between pb-10 mb-10 relative after:w-75 after:bg-white/15 after:h-px after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$199</h2>
+							<span class="!text-white text-lg font-medium font-title">Basic Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$299</h2>
+							<span class="!text-white text-lg font-medium font-title">Pro Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$399</h2>
+							<span class="!text-white text-lg font-medium font-title">Full Plan</span>
+						</li>
+					</ul>
+					<ul class="mt-5">
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.x.com">
+								<i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.facebook.com">
+								<i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.instagram.com">
+								<i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.pinterest.com/">
+								<i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendor/gsap/gsap.min.js"></script>
+<script src="assets/vendor/gsap/ScrollSmoother.js"></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/masonry/masonry-4.2.2.js"></script>
+<script src="assets/vendor/masonry/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.js"></script>
+<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendor/nouislider/nouislider.min.js"></script>
+<script src="assets/vendor/xmenu/xmenu.js"></script>
+<script src="assets/vendor/lightgallery/dist/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/zoom/lg-zoom.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="assets/js/theia-sticky-sidebar.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/dz.carousel.js"></script>
+<script src="assets/js/lc_lightbox.lite.js"></script>
+<script src="assets/js/dz.ajax.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

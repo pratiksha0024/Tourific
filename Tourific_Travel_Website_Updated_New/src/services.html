@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+	<meta charset="UTF-8">
+
+	<!-- Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Tourific Travel - Services</title>
+
+    <meta name="title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="keywords" content="travel HTML template, tour booking template, Tailwind travel website, tourism Tailwind template, holiday booking, responsive travel design, tour operator website, Travlla template, modern travel design, travel agency web design">
+    <meta name="author" content="DexignZone">
+    <meta name="robots" content="index, follow">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://travlla.dexignzone.com/tailwind/demo/services.html">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta property="og:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta property="og:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+    <meta property="og:url" content="https://travlla.dexignzone.com/demo/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Travlla">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="twitter:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="twitter:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+
+    <!-- IE Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="assets/icons/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/flaticon/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/feather/css/feather.css">
+		
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/flatpickr/css/flatpicker.css">
+	<link rel="stylesheet" href="assets/css/lc_lightbox.css">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="assets/vendor/lightgallery/dist/css/lightgallery-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<style>
+    /* ===== Header logos ===== */
+    .tf-logo-main { height: 64px; width: auto; max-width: none; object-fit: contain; }
+    .tf-logo-side { height: 60px; width: auto; max-width: none; object-fit: contain; }
+    @media (min-width: 640px)  { .tf-logo-main { height: 72px; } .tf-logo-side { height: 68px; } }
+    @media (min-width: 1024px) { .tf-logo-main { height: 96px; } .tf-logo-side { height: 90px; } }
+
+    /* ===== Footer logo ===== */
+    .tf-footer-logo { width: 100%; max-width: 200px; height: auto; }
+
+    /* ===== General mobile safety ===== */
+    html, body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    @media (max-width: 767px) {
+        .tf-footer-contact a,
+        .tf-footer-contact span { word-break: break-word; overflow-wrap: anywhere; }
+        .tf-footer-col { text-align: left; }
+    }
+
+    /* ===== Services Section Styles ===== */
+    .tf-service-card {
+        background: #ffffff;
+        border: 1px solid rgba(6, 97, 104, 0.12);
+        border-radius: 2rem;
+        padding: 2.5rem;
+        box-shadow: 0 10px 30px rgba(6, 97, 104, 0.06);
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        overflow: hidden;
+    }
+
+    /* ===== Directional Entrance Transitions (Opposite Sides) ===== */
+    .tf-transition-left,
+    .tf-transition-right {
+        opacity: 0;
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        transition: opacity 0.8s ease-out, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .tf-transition-left {
+        transform: translate3d(-80px, 0, 0);
+    }
+    .tf-transition-right {
+        transform: translate3d(80px, 0, 0);
+    }
+
+    /* Triggered state */
+    .tf-service-card.is-visible .tf-transition-left,
+    .tf-service-card.is-visible .tf-transition-right,
+    .no-js .tf-transition-left,
+    .no-js .tf-transition-right {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    @media (max-width: 1023px) {
+        .tf-transition-left {
+            transform: translate3d(-55px, 0, 0);
+        }
+        .tf-transition-right {
+            transform: translate3d(55px, 0, 0);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .tf-transition-left {
+            transform: translate3d(-35px, 0, 0);
+        }
+        .tf-transition-right {
+            transform: translate3d(35px, 0, 0);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .tf-transition-left,
+        .tf-transition-right {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+    }
+    .tf-service-card:hover {
+        box-shadow: 0 20px 40px rgba(6, 97, 104, 0.12);
+        border-color: rgba(6, 97, 104, 0.25);
+    }
+    .tf-service-card + .tf-service-card {
+        margin-top: 2.5rem;
+    }
+    .tf-service-img-wrap {
+        border-radius: 1.5rem;
+        overflow: hidden;
+        border: 4px solid #DBEEEE;
+        box-shadow: 0 12px 28px rgba(6, 97, 104, 0.12);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .tf-service-img-wrap img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+    .tf-service-card:hover .tf-service-img-wrap img {
+        transform: scale(1.04);
+    }
+
+    @media (max-width: 1023px) {
+        .tf-service-card {
+            padding: 1.5rem;
+        }
+        .tf-order-image { order: 1; }
+        .tf-order-content { order: 2; }
+    }
+
+    /* Dark Mode Support */
+    .dark .tf-service-card {
+        background: #113435;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    .dark .tf-service-card p {
+        color: #DBEEEE;
+    }
+    .dark .tf-service-img-wrap {
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+</style>
+</head>
+<body id="bg" class="selection:bg-[#484848] selection:text-white">
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+
+<!-- Curser Pointer -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<div class="page-wraper">
+    <!-- HEADER START -->
+    <header class="site-header sticky-header absolute lg:left-8.75 lg:right-8.75 lg:top-8.75 left-0 right-0 top-0 duration-500 z-999 [.site-header.is-fixed]:fixed [.site-header.is-fixed]:animate-header-scroll-animation [.site-header.is-fixed]:bg-primary [.site-header.is-fixed]:rounded-b-3xl [.site-header.is-fixed]:top-0">
+        <div class="main-bar-wraper">
+            <div class="w-full lg:min-h-30 min-h-20 lg:ps-8.75 px-4 lg:pe-13.75 duration-500 rounded-5xl flex items-center justify-between">
+                <div class="flex relative w-full items-center">
+
+                    <!-- MAIN LOGO -->
+                    <div class="flex items-center relative z-9 h-20 shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-logo-main duration-500">
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="xmenu-toggler lg:hidden float-right mt-4.5 mb-4 md:ml-7 ml-4 size-11 bg-dark-600 relative cursor-pointer max-lg:order-1" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-3.25 w-5.5"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-0 top-5.5 w-6.25"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-8 w-4"></span>
+                    </button>
+                    <div class="lg:hidden fixed top-0 left-0 bg-black size-full duration-300 z-999 opacity-0 visible pointer-events-none menu-close fade-overlay"></div>
+
+                    <!-- NAVIGATION -->
+                    <div class="flex lg:justify-center lg:basis-auto lg:grow max-lg:flex-col justify-start font-base max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white dark:max-lg:bg-dark max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 header-nav custom-scroll">
+                        <div class="flex items-center relative z-9 py-6.25 lg:hidden">
+                            <a href="index.html" class="table-cell align-middle">
+                                <img src="assets/images/tourific-logo.png" alt="Tourific" class="object-contain duration-500 max-w-30 block">
+                            </a>
+                        </div>
+                        <ul class="lg:flex flex-wrap navbar-nav">
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="index.html"><span class="inline-block">Home</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="about-1.html"><span class="inline-block">About Us</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary after:ml-1 after:-mt-1 after:inline-block after:size-2.5 after:bg-arrow-down after:bg-no-repeat after:bg-bottom max-lg:after:hidden" href="tour-1-grid.html"><span class="inline-block">Tours</span><i class="fas fa-chevron-right lg:!hidden !block size-7 !leading-7 text-center text-xs bg-black text-white float-end"></i></a>
+                                <ul class="lg:absolute bg-white dark:bg-dark lg:rounded-xxl block lg:left-0 max-lg:ps-3.75 w-full lg:w-55 lg:opacity-0 lg:invisible lg:translate-y-10 z-10 mt-0 text-left duration-500 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0 max-lg:hidden sub-menu">
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="tour-1-grid.html"><span>Domestic</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="international.html"><span>International</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="wildlife.html"><span>Wildlife</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="services.html"><span class="inline-block">Services</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="testimonial.html"><span class="inline-block">Reviews</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="videos.html"><span class="inline-block">Videos</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="gallery.html"><span class="inline-block">Gallery</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="contact.html"><span class="inline-block">Contact</span></a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden block max-lg:p-5 text-center mt-auto">
+                            <ul>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-facebook-f" target="_blank" href="https://www.facebook.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-twitter" target="_blank" href="https://twitter.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-instagram" target="_blank" href="https://www.instagram.com"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE LOGO -->
+                    <div class="flex lg:justify-end items-center z-9 h-20 xl:pl-8 ms-auto shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-kashi-logo.png" alt="Tourific Mangalmay Kashi" class="tf-logo-side">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- CONTENT START -->
+            <div class="page-content">
+                <!-- INNER PAGE BANNER -->
+                <div class="relative bg-cover bg-center w-full bg-white overflow-hidden" style="background-image: url('assets/images/background/hero-banner-services.png');">
+						<div class="opacity-100 absolute left-0 top-0 size-full"></div>
+						<div class="flex w-full lg:h-160 md:h-135 h-100 pb-10 items-baseline mx-auto">
+							<div class="relative md:mt-60 mt-45 flex items-center justify-center w-full flex-col z-5">
+								<div class="tf-hero-glass">
+									<div>
+									<h2 class="tf-hero-title lg:text-120 md:text-104 text-56 relative text-white!">Services</h2>
+								</div>
+								<!-- BREADCRUMB ROW -->                            
+								<div>
+									<ul class="tf-hero-breadcrumb inline-block">
+										<li class="tf-breadcrumb-home md:text-32 text-24 relative inline-block font-semibold text-white">
+											<a href="index.html" class="text-white hover:text-citrusyellow duration-300">Home</a></li>
+									</ul>
+								</div>
+								</div>
+							</div>
+							<!-- BREADCRUMB ROW END -->                        
+						</div>
+						<div class="h-50 w-full absolute top-50 left-0 z-1">            
+							<div class="inline-block whitespace-nowrap animate-moveCloud">
+								<img src="assets/images/inr-banner-cloud.png" alt="Image" class="h-47.5">
+							</div>
+						</div>
+						<div class="absolute w-1/2 right-0 top-0 bottom-0 z-1">
+							<div class="mt-60 animate-slide-right"><img src="assets/images/airplane.png" alt="Image" class="animate-slide-top-fast" width="378" height="146"></div>
+						</div>
+						<div class="absolute right-11.25 bottom-16.25 animate-slide-top2"><img src="assets/images/hotballon-Left.png" alt="Image" class="md:w-21 w-10" width="84" height="121"></div>
+						<div class="absolute md:-right-15 -right-10 top-41.25 animate-slide-top"><img src="assets/images/hotballon-right.png" alt="Image" class="md:w-37.5 w-20"
+						width="230" height="333"></div>
+					</div>
+                <!-- INNER PAGE BANNER END -->
+                
+                <!-- ====================================
+                     SERVICES WE OFFER SECTION START
+                ==================================== -->
+                <div class="bg-primary lg:py-20 py-12 px-5 relative overflow-hidden">
+                    <div class="container">
+                        <div class="text-center max-w-150 mx-auto">
+                            <span class="text-white font-title font-bold md:text-28 text-xl block mb-2">Wornderful Services For You</span>
+                            <h2 class="xl:text-50 md:text-42 text-3xl uppercase font-black text-citrusyellow font-base mb-2.5">Services We Offer</h2>
+                            <div class="-mt-4">
+                                <img src="assets/images/background/TitleSeparator2.png" alt="Separator" class="w-117.5 inline-block" width="470" height="70" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:py-25 py-12.5 bg-white dark:bg-dark overflow-hidden">
+                    <div class="container">
+                        <div class="max-w-295 mx-auto">
+
+                            <!-- 1. AIRLINE TICKETING (Image on Left, Service on Right) -->
+                            <div class="tf-service-card tf-transition-row">
+                                <div class="grid grid-cols-12 gap-7.5 items-center">
+                                    <!-- Image: transitions from LEFT -->
+                                    <div class="col-span-12 lg:col-span-5 tf-transition-left">
+                                        <div class="tf-service-img-wrap">
+                                            <img src="assets/images/services-airline-ticketing.png" alt="Airline Ticketing" width="400" height="400" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <!-- Service Content: transitions from RIGHT -->
+                                    <div class="col-span-12 lg:col-span-7 tf-transition-right">
+                                        <span class="inline-block text-secondary font-title font-bold text-lg mb-1 uppercase tracking-wider">Services We Offer</span>
+                                        <h3 class="xl:text-36 md:text-30 text-24 font-bold text-primary! mb-3.5 font-base">Airline Ticketing</h3>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">Travelling by air can be a fun experience &amp; it saves time too, which is why many prefer this mode of travel. But booking air tickets can be a frustrating task, however you don't need to worry as we offer excellent Airline Ticketing Services all over India. As reliable Airline Ticketing Agents in Jaipur, we will ensure that the flight tickets are booked on time &amp; as per your specific instructions.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-5">By availing our service, you can escape all the hassles of booking an air ticket yourself. For any queries that you may regarding any airlines, the flight ticket rates, flight schedule, etc. just contact us &amp; we will be happy to help.</p>
+                                        <div>
+                                            <a href="contact.html" class="site-button butn-bg-shape">Enquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. HOTEL BOOKING (Service on Left, Image on Right) -->
+                            <div class="tf-service-card tf-transition-row">
+                                <div class="grid grid-cols-12 gap-7.5 items-center">
+                                    <!-- Service Content: transitions from LEFT -->
+                                    <div class="col-span-12 lg:col-span-7 tf-order-content tf-transition-left">
+                                        <span class="inline-block text-secondary font-title font-bold text-lg mb-1 uppercase tracking-wider">Services We Offer</span>
+                                        <h3 class="xl:text-36 md:text-30 text-24 font-bold text-primary! mb-3.5 font-base">Hotel Booking</h3>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">When you are planning for a vacation, the first and foremost priority is getting booking in a hotel. We can help you in searching the best accommodation as per your requirement. We offer impeccable Hotel Booking Services to our clients. We specialize in providing 5 star hotels, 3 star hotels, 2 star hotels, guest houses, luxury resorts, and motels.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-5">We understand the requirements of the client and then book hotels on their behalf. We make sure that all facilities are provided to the clients, so that they have a comfortable stay with us. We provide the best and transparent deals so that our clients so that they are well satisfied.</p>
+                                        <div>
+                                            <a href="contact.html" class="site-button butn-bg-shape">Enquire Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- Image: transitions from RIGHT -->
+                                    <div class="col-span-12 lg:col-span-5 tf-order-image tf-transition-right">
+                                        <div class="tf-service-img-wrap">
+                                            <img src="assets/images/services-hotel-booking.png" alt="Hotel Booking" width="400" height="400" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. VISA ASSISTANCE (Image on Left, Service on Right) -->
+                            <div class="tf-service-card tf-transition-row">
+                                <div class="grid grid-cols-12 gap-7.5 items-center">
+                                    <!-- Image: transitions from LEFT -->
+                                    <div class="col-span-12 lg:col-span-5 tf-transition-left">
+                                        <div class="tf-service-img-wrap">
+                                            <img src="assets/images/services-visa-assistance.png" alt="Visa Assistance" width="400" height="400" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <!-- Service Content: transitions from RIGHT -->
+                                    <div class="col-span-12 lg:col-span-7 tf-transition-right">
+                                        <span class="inline-block text-secondary font-title font-bold text-lg mb-1 uppercase tracking-wider">Services We Offer</span>
+                                        <h3 class="xl:text-36 md:text-30 text-24 font-bold text-primary! mb-3.5 font-base">Visa Assistance</h3>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">Travel Visas are required to gain entry to most countries around the world. For instance, you will need a visa to USA, Canada, England, China, Australia, Middle East, just to name a few of the popular destinations.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">There are a few certain countries that simply require an available Visa page in your current Passport to be stamped at the airport upon arrival, but in most cases one will need to acquire a Travel Visa before even departing from India.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-5">Many international travelers are often not sure of the documentation required to enter foreign country. Visa is an official entry permit to your required destination.</p>
+                                        <div>
+                                            <a href="contact.html" class="site-button butn-bg-shape">Enquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. TRAVEL INSURANCE (Service on Left, Image on Right) -->
+                            <div class="tf-service-card tf-transition-row">
+                                <div class="grid grid-cols-12 gap-7.5 items-center">
+                                    <!-- Service Content: transitions from LEFT -->
+                                    <div class="col-span-12 lg:col-span-7 tf-order-content tf-transition-left">
+                                        <span class="inline-block text-secondary font-title font-bold text-lg mb-1 uppercase tracking-wider">Services We Offer</span>
+                                        <h3 class="xl:text-36 md:text-30 text-24 font-bold text-primary! mb-3.5 font-base">Travel Insurance</h3>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">Travel insurance is a must whether you are on a business or leisure trip. Travel insurance safeguards you from any untoward incidents like you luggage theft/loss, medical emergencies en-route, etc. It is not enough to have travel insurance, it is essential that you have chosen the right travel insurance plan.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-5">At Incredible Tour To India, here we have experts who will guide you &amp; offer reliable advice regarding the best travel insurance as per your budget and travel requirements. We work in the best interests of our customers &amp; ensure that they understand all the nitty-gritty details of the travel insurance plan that they are option for.</p>
+                                        <div>
+                                            <a href="contact.html" class="site-button butn-bg-shape">Enquire Now</a>
+                                        </div>
+                                    </div>
+                                    <!-- Image: transitions from RIGHT -->
+                                    <div class="col-span-12 lg:col-span-5 tf-order-image tf-transition-right">
+                                        <div class="tf-service-img-wrap">
+                                            <img src="assets/images/services-travel-insurance.png" alt="Travel Insurance" width="400" height="400" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5. FOREIGN EXCHANGE (Image on Left, Service on Right) -->
+                            <div class="tf-service-card tf-transition-row">
+                                <div class="grid grid-cols-12 gap-7.5 items-center">
+                                    <!-- Image: transitions from LEFT -->
+                                    <div class="col-span-12 lg:col-span-5 tf-transition-left">
+                                        <div class="tf-service-img-wrap">
+                                            <img src="assets/images/services-foreign-exchange.png" alt="Foreign Exchange" width="400" height="400" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <!-- Service Content: transitions from RIGHT -->
+                                    <div class="col-span-12 lg:col-span-7 tf-transition-right">
+                                        <span class="inline-block text-secondary font-title font-bold text-lg mb-1 uppercase tracking-wider">Services We Offer</span>
+                                        <h3 class="xl:text-36 md:text-30 text-24 font-bold text-primary! mb-3.5 font-base">Foreign Exchange</h3>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-3">Tourific offers foreign exchange services at the lowest exchange rates possible. We deliver foreign currency and Forex cards at your doorstep within 48 hours of ordering.</p>
+                                        <p class="text-base text-bodycolor leading-relaxed mb-5">From currency notes to Travellers Cheques and foreign travel cards to remittances, experience utmost convenience and service excellence with us.</p>
+                                        <div>
+                                            <a href="contact.html" class="site-button butn-bg-shape">Enquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICES WE OFFER SECTION END -->
+        
+</div>
+            <!-- CONTENT END -->
+
+            <!-- FOOTER START -->
+            <footer class="pt-20 bg-primary bg-cover bg-[url(../images/background/ftr-dark-bg.png)]">
+                <div class="container">
+                    <div class="sm:pt-20 pt-6 pb-4 text-white/06 border-b border-primary dark:border-white/15">
+                        <div class="grid grid-cols-12 gap-y-6">
+
+                            <!-- Logo + About + Social -->
+                            <div class="lg:col-span-3 col-span-12 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <div class="mb-6 block">
+                                        <a href="index.html"><img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-footer-logo" loading="lazy"></a>
+                                    </div>
+                                    <p class="sm:pr-6 mb-4 text-base text-white">Tourific Travel Services is a multifaceted travel agency and tour operator providing totally reliable competitively tour and travel solutions.</p>
+                                    <ul class="mt-5 flex flex-wrap gap-y-2">
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Quick Links</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="index.html">Home</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="about-1.html">About Us</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="tour-1-grid.html">Domestic</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="international.html">International</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="wildlife.html">Wildlife</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Explore -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Explore</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="services.html">Services</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="testimonial.html">Reviews</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="videos.html">Videos</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="gallery.html">Gallery</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact Us -->
+                            <div class="lg:col-span-5 col-span-12 sm:px-3.75 tf-footer-col tf-footer-contact">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Contact Us</h3>
+                                    <ul>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-phone text-lg text-white"></i>
+                                            </div>
+                                            <a href="tel:+919021135384"><span class="text-xl text-citrusyellow font-semibold">+91 9021135384</span></a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-envelope text-lg text-white"></i>
+                                            </div>
+                                            <a class="text-paleaqua font-semibold text-base" href="mailto:archana@tourific.in">archana@tourific.in</a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Pune:- </b>397/1/2, Building No. 7A, Flat No.2, 'Agrasen Nagar' Housing Society, Kundan Nagar, Opp. Atlas Copco, Dapodi, Pune-411012</span>
+                                        </li>
+                                        <li class="relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Nashik:- </b>SHREE SATYANARAYAN ROONGTA FORUM Shop No.6001 Near City Center Mall, Dr. Babasaheb Ambedkar Rd, near DR BR, Lavate Nagar, Parijat Nagar, Nashik, Maharashtra 422005</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="py-10 text-white relative z-1 font-normal after:absolute after:bg-primary after:max-w-135 after:h-px after:left-1/2 after:top-0 after:-translate-x-1/2">
+                        <div class="container">
+                            <p class="copyrights-text text-center text-sm font-semibold">© <span class="current-year">2026</span> <a href="index.html"><span class="inline-block text-citrusyellow uppercase text-center text-sm font-semibold">Tourific Travel</span></a> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+        </div>
+    </div>
+    <!-- BUTTON TOP START -->
+    <button class="scroltop" aria-label="Scroll to top"><span class="fa fa-angle-up  relative" id="btn-vibrate" aria-hidden="true"></span></button>
+    <div id="offcanvas-right" class="fixed top-0 right-0 z-9999999 h-screen overflow-y-auto transition-transform translate-x-full bg-black/20 backdrop-blur-[5px] sm:max-w-125 max-w-88 custom-scroll">
+		<button type="button" class="absolute right-0 top-6 text-[#443935] bg-citrusyellow text-base size-7 cursor-pointer rounded m-6.25" data-drawer-hide="offcanvas-right" aria-label="Close">
+			<i class="fa-solid fa-xmark" aria-hidden="true"></i>
+		</button>
+		<div class="pt-30 pb-10 px-8">
+			<div class="">
+				<div class="mb-15">
+					<img src="assets/images/logo-dark.png" alt="Image" class="max-w-33.5">
+				</div>
+				<div class="trv-side-pnl-content">
+					<div class="mb-15">
+						<h3 class="text-28 !text-white mb-5">It's Time to Traveling</h3>
+						<h3 class="!text-secondary text-5xl mb-5 uppercase">Plan Your Next Holiday</h3>
+						<p class="text-base !text-white/50">Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing.</p>   
+					</div>
+					<h3 class="text-28 !text-white mb-5">Don't miss out this offers!</h3>
+					<ul class="flex justify-between pb-10 mb-10 relative after:w-75 after:bg-white/15 after:h-px after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$199</h2>
+							<span class="!text-white text-lg font-medium font-title">Basic Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$299</h2>
+							<span class="!text-white text-lg font-medium font-title">Pro Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$399</h2>
+							<span class="!text-white text-lg font-medium font-title">Full Plan</span>
+						</li>
+					</ul>
+					<ul class="mt-5">
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.x.com">
+								<i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.facebook.com">
+								<i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.instagram.com">
+								<i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.pinterest.com/">
+								<i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendor/gsap/gsap.min.js"></script>
+<script src="assets/vendor/gsap/ScrollSmoother.js"></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/masonry/masonry-4.2.2.js"></script>
+<script src="assets/vendor/masonry/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.js"></script>
+<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendor/nouislider/nouislider.min.js"></script>
+<script src="assets/vendor/xmenu/xmenu.js"></script>
+<script src="assets/vendor/lightgallery/dist/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/zoom/lg-zoom.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="assets/js/theia-sticky-sidebar.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/dz.carousel.js"></script>
+<script src="assets/js/lc_lightbox.lite.js"></script>
+<script src="assets/js/dz.ajax.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- Directional Entrance Transitions Script -->
+<script>
+    /* ===== Directional Scroll-Reveal Entrance Transitions ===== */
+    (function () {
+        function initServiceTransitions() {
+            var cards = document.querySelectorAll('.tf-service-card.tf-transition-row');
+            if (!cards.length) return;
+
+            if (!('IntersectionObserver' in window)) {
+                cards.forEach(function (c) { c.classList.add('is-visible'); });
+                return;
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.08,
+                rootMargin: '0px 0px -25px 0px'
+            });
+
+            cards.forEach(function (card) {
+                observer.observe(card);
+            });
+
+            // Immediately reveal any cards already in initial viewport on page load
+            cards.forEach(function (card) {
+                var rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    card.classList.add('is-visible');
+                }
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initServiceTransitions);
+        } else {
+            initServiceTransitions();
+        }
+    })();
+</script>
+</body>
+</html>

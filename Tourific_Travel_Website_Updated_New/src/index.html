@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourific Travel - Let's enjoy the journey | Home</title>
+    <meta name="title" content="Tourific Travel - A travel company">
+    <meta name="description" content="Tourific Travel Services is a multifaceted travel agency and tour operator providing totally reliable competitively tour and travel solutions.">
+    <meta name="keywords" content="Tourific, travel agency, tour operator, domestic tours, international tours, wildlife tours, Pune, Nashik">
+    <meta name="author" content="Tourific">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="assets/icons/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/feather/css/feather.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/flatpickr/css/flatpicker.css">
+    <link rel="stylesheet" href="assets/css/lc_lightbox.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendor/lightgallery/dist/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* ===== Header logos ===== */
+    .tf-logo-main { height: 64px; width: auto; max-width: none; object-fit: contain; }
+    .tf-logo-side { height: 60px; width: auto; max-width: none; object-fit: contain; }
+    @media (min-width: 640px)  { .tf-logo-main { height: 72px; } .tf-logo-side { height: 68px; } }
+    @media (min-width: 1024px) { .tf-logo-main { height: 96px; } .tf-logo-side { height: 90px; } }
+
+    /* ===== Footer logo ===== */
+    .tf-footer-logo { width: 100%; max-width: 200px; height: auto; }
+
+    /* ===== General mobile safety ===== */
+    html, body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    @media (max-width: 767px) {
+        .tf-footer-contact a,
+        .tf-footer-contact span { word-break: break-word; overflow-wrap: anywhere; }
+        .tf-footer-col { text-align: left; }
+    }
+
+    /* ==========================================================
+       KASHI SIGNATURE SECTION
+    ========================================================== */
+    .kashi-signature-section { background: #F5F0E8; overflow: hidden; }
+
+    .kashi-split { display: flex; flex-direction: column; min-height: 520px; }
+    @media (min-width: 1024px) { .kashi-split { flex-direction: row; min-height: 580px; } }
+
+    .kashi-img-col { position: relative; overflow: hidden; min-height: 280px; flex-shrink: 0; }
+    @media (min-width: 640px)  { .kashi-img-col { min-height: 360px; } }
+    @media (min-width: 1024px) { .kashi-img-col { width: 52%; min-height: 100%; } }
+
+    .kashi-img-col img {
+        position: absolute; inset: 0; width: 100%; height: 100%;
+        object-fit: cover; object-position: center;
+    }
+
+    .kashi-img-col::after {
+        content: ''; position: absolute; top: 0; right: -1px; bottom: 0;
+        width: 70px; background: #F5F0E8;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        display: none;
+    }
+    @media (min-width: 1024px) { .kashi-img-col::after { display: block; } }
+
+    .kashi-content-col {
+        background: #F5F0E8; display: flex; align-items: center;
+        padding: 40px 28px 48px; flex: 1;
+    }
+    @media (min-width: 640px)  { .kashi-content-col { padding: 48px 40px 56px; } }
+    @media (min-width: 1024px) { .kashi-content-col { padding: 56px 60px 56px 72px; width: 48%; } }
+
+    .kashi-content-col .kashi-inner { max-width: 480px; }
+
+    /* Label — CHANGED: black + larger */
+    .kashi-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #000;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    .kashi-label::after {
+        content: ''; display: inline-block; width: 28px; height: 2px;
+        background: #FFAA0D; border-radius: 2px;
+    }
+
+    .kashi-headline {
+        font-family: 'Afacad', serif;
+        font-size: clamp(36px, 5vw, 64px);
+        font-weight: 700; color: #1a2635; line-height: 1.08; margin-bottom: 20px;
+    }
+
+    .kashi-desc { color: #555; font-size: 16px; line-height: 1.75; margin-bottom: 36px; max-width: 400px; }
+
+    .kashi-ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+    .kashi-btn-primary {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #FFAA0D; color: #fff; font-weight: 700; font-size: 15px;
+        padding: 14px 28px; border-radius: 50px; text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 16px rgba(255,170,13,0.35);
+    }
+    .kashi-btn-primary:hover {
+        background: #066168; color: #fff; transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(6,97,104,0.3);
+    }
+    .kashi-btn-text {
+        display: inline-flex; align-items: center; gap: 8px; color: #066168;
+        font-weight: 700; font-size: 15px; text-decoration: none; transition: color 0.3s ease;
+    }
+    .kashi-btn-text:hover { color: #FFAA0D; }
+
+    /* ==========================================================
+       KASHI MARQUEE
+    ========================================================== */
+    .kashi-marquee-section { background: #F5F0E8; padding: 36px 0 52px; overflow: hidden; }
+    @media (min-width: 1024px) { .kashi-marquee-section { padding: 48px 0 64px; } }
+
+    .kashi-marquee-title {
+        text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 0.15em;
+        text-transform: uppercase; color: #066168; margin-bottom: 28px; opacity: 0.6;
+    }
+
+    @keyframes kashiMarqueeRTL {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    .kashi-marquee-wrap { overflow: hidden; cursor: grab; }
+    .kashi-marquee-wrap:active { cursor: grabbing; }
+
+    .kashi-marquee-track {
+        display: flex; width: max-content;
+        animation: kashiMarqueeRTL 90s linear infinite; /* slower: 21 cards */
+        gap: 0;
+    }
+    .kashi-marquee-wrap:hover .kashi-marquee-track { animation-play-state: paused; }
+
+    .kashi-loc-card {
+        flex-shrink: 0; width: 240px; background: #fff; border-radius: 18px;
+        overflow: hidden; margin: 0 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    @media (min-width: 640px)  { .kashi-loc-card { width: 260px; margin: 0 12px; } }
+    @media (min-width: 1024px) { .kashi-loc-card { width: 280px; margin: 0 14px; } }
+
+    .kashi-loc-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,0.15); }
+
+    .kashi-loc-card .klc-img { height: 160px; overflow: hidden; }
+    @media (min-width: 640px) { .kashi-loc-card .klc-img { height: 175px; } }
+
+    .kashi-loc-card .klc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .kashi-loc-card:hover .klc-img img { transform: scale(1.08); }
+
+    .kashi-loc-card .klc-body { padding: 16px 18px 18px; position: relative; }
+    .kashi-loc-card .klc-icon { color: #FFAA0D; font-size: 20px; margin-bottom: 8px; display: block; }
+    .kashi-loc-card .klc-title { font-size: 16px; font-weight: 700; color: #066168; margin-bottom: 5px; line-height: 1.3; }
+    @media (min-width: 640px) { .kashi-loc-card .klc-title { font-size: 17px; } }
+    .kashi-loc-card .klc-text { font-size: 12px; color: #777; line-height: 1.55; margin-bottom: 14px; }
+
+    .kashi-loc-card .klc-arrow {
+        width: 30px; height: 30px; background: #FFAA0D; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; color: #fff;
+        font-size: 11px; margin-left: auto; transition: background 0.3s ease;
+        border: none; cursor: pointer;
+    }
+    .kashi-loc-card:hover .klc-arrow { background: #066168; }
+
+    /* ==========================================================
+       PARTNER LOGOS — MOVING (right to left)
+    ========================================================== */
+    @keyframes partnerRTL { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .partner-marquee { overflow: hidden; width: 100%; }
+    .partner-marquee-track {
+        display: flex; align-items: center; width: max-content;
+        animation: partnerRTL 25s linear infinite;
+    }
+    .partner-marquee:hover .partner-marquee-track { animation-play-state: paused; }
+    .partner-marquee-track .p-logo { flex-shrink: 0; padding: 0 36px; }
+    .partner-marquee-track .p-logo img { height: 104px; width: auto; max-width: none; transition: transform .3s ease; }
+    @media (min-width: 1024px) { .partner-marquee-track .p-logo img { height: 136px; } }
+
+    /* Top Trending cards — keep a fixed height even without the date line */
+    .trv-tsmo-banner .swiper-slide > div { min-height: 340px; align-items: center; }
+    @media (min-width: 1280px) { .trv-tsmo-banner .swiper-slide > div { min-height: 400px; } }
+    .partner-marquee-track .p-logo:hover img { transform: scale(1.08); }
+
+    /* ==========================================================
+       SECTION REVEAL ON SCROLL
+    ========================================================== */
+    .section-reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.75s ease, transform 0.75s ease; }
+    .section-reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== HOVER EFFECTS ===== */
+    .trv-tours-st1 .swiper-slide .mx-3\.75 { transition: transform 0.35s ease; }
+    .trv-tours-st1 .swiper-slide:hover .mx-3\.75 { transform: translateY(-10px); }
+
+    .trv-we-off-content .relative.text-center.bg-white { transition: transform 0.35s ease, box-shadow 0.35s ease; }
+    .trv-we-off-content .relative.text-center.bg-white:hover { transform: translateY(-8px); box-shadow: 0 24px 48px rgba(0,0,0,0.14); }
+
+    .trv-icon-bx-st1 { transition: transform 0.3s ease; }
+    .trv-icon-bx-st1:hover { transform: translateX(6px); }
+    .trv-icon-bx-st1:hover .trv-icon-bx-media { filter: drop-shadow(0 4px 12px rgba(255,170,13,0.4)); }
+
+    /* ==========================================================
+       TESTIMONIALS — NEW CARD LAYOUT
+    ========================================================== */
+    .tm-section-title { color: #E8960C; font-weight: 800; font-size: clamp(28px, 4vw, 40px); text-transform: uppercase; text-align: center; margin-bottom: 10px; }
+    .tm-bar { width: 120px; height: 3px; background: #E8960C; margin: 0 auto 18px; }
+    .tm-sub { text-align: center; font-size: 15px; color: #333; margin-bottom: 70px; }
+    .tm-grid { display: grid; grid-template-columns: 1fr; gap: 70px 28px; padding-top: 20px; }
+    @media (min-width: 768px) { .tm-grid { grid-template-columns: repeat(2, 1fr); } }
+    .tm-card { position: relative; background: #efefef; padding: 60px 28px 26px; text-align: center; transition: box-shadow .3s ease, transform .3s ease; }
+    .tm-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.18); transform: translateY(-4px); }
+    .tm-avatar {
+        position: absolute; top: -36px; left: 50%; transform: translateX(-50%);
+        width: 76px; height: 76px; border-radius: 50%; background: #066168; color: #fff;
+        border: 5px solid #fff; display: flex; align-items: center; justify-content: center;
+        font-size: 30px; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    .tm-text { font-size: 16px; line-height: 1.9; color: #222; margin-bottom: 18px; }
+    .tm-text .q { color: #E8960C; font-size: 26px; font-weight: 700; vertical-align: -4px; }
+    .tm-name { color: #E8960C; font-weight: 700; font-size: 20px; }
+    .tm-role { font-size: 12px; color: #333; margin-left: 4px; }
+    .tm-stars { color: #FFAA0D; font-size: 14px; margin-top: 6px; }
+</style>
+<body id="bg" class="selection:bg-[#484848] selection:text-white">
+
+<!-- LOADING AREA START -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+</div>
+<!-- LOADING AREA END -->
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<div class="page-wraper">
+    <header class="site-header sticky-header absolute lg:left-8.75 lg:right-8.75 lg:top-8.75 left-0 right-0 top-0 duration-500 z-999 [.site-header.is-fixed]:fixed [.site-header.is-fixed]:animate-header-scroll-animation [.site-header.is-fixed]:bg-primary [.site-header.is-fixed]:rounded-b-3xl [.site-header.is-fixed]:top-0">
+        <div class="main-bar-wraper">
+            <div class="w-full lg:min-h-30 min-h-20 lg:ps-8.75 px-4 lg:pe-13.75 duration-500 rounded-5xl flex items-center justify-between">
+                <div class="flex relative w-full items-center">
+
+                    <!-- MAIN LOGO -->
+                    <div class="flex items-center relative z-9 h-20 shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-logo-main duration-500">
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="xmenu-toggler lg:hidden float-right mt-4.5 mb-4 md:ml-7 ml-4 size-11 bg-dark-600 relative cursor-pointer max-lg:order-1" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-3.25 w-5.5"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-0 top-5.5 w-6.25"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-8 w-4"></span>
+                    </button>
+                    <div class="lg:hidden fixed top-0 left-0 bg-black size-full duration-300 z-999 opacity-0 visible pointer-events-none menu-close fade-overlay"></div>
+
+                    <!-- NAVIGATION -->
+                    <div class="flex lg:justify-center lg:basis-auto lg:grow max-lg:flex-col justify-start font-base max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white dark:max-lg:bg-dark max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 header-nav custom-scroll">
+                        <div class="flex items-center relative z-9 py-6.25 lg:hidden">
+                            <a href="index.html" class="table-cell align-middle">
+                                <img src="assets/images/tourific-logo.png" alt="Tourific" class="object-contain duration-500 max-w-30 block">
+                            </a>
+                        </div>
+                        <ul class="lg:flex flex-wrap navbar-nav">
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="index.html"><span class="inline-block">Home</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="about-1.html"><span class="inline-block">About Us</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary after:ml-1 after:-mt-1 after:inline-block after:size-2.5 after:bg-arrow-down after:bg-no-repeat after:bg-bottom max-lg:after:hidden" href="tour-1-grid.html"><span class="inline-block">Tours</span><i class="fas fa-chevron-right lg:!hidden !block size-7 !leading-7 text-center text-xs bg-black text-white float-end"></i></a>
+                                <ul class="lg:absolute bg-white dark:bg-dark lg:rounded-xxl block lg:left-0 max-lg:ps-3.75 w-full lg:w-55 lg:opacity-0 lg:invisible lg:translate-y-10 z-10 mt-0 text-left duration-500 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0 max-lg:hidden sub-menu">
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="tour-1-grid.html"><span>Domestic</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="international.html"><span>International</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="wildlife.html"><span>Wildlife</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="services.html"><span class="inline-block">Services</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="testimonial.html"><span class="inline-block">Reviews</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="videos.html"><span class="inline-block">Videos</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="gallery.html"><span class="inline-block">Gallery</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="contact.html"><span class="inline-block">Contact</span></a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden block max-lg:p-5 text-center mt-auto">
+                            <ul>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-facebook-f" target="_blank" href="https://www.facebook.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-twitter" target="_blank" href="https://twitter.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-instagram" target="_blank" href="https://www.instagram.com"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE LOGO -->
+                    <div class="flex lg:justify-end items-center z-9 h-20 xl:pl-8 ms-auto shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-kashi-logo.png" alt="Tourific Mangalmay Kashi" class="tf-logo-side">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="page-content">
+
+                <!-- ====================================
+                     HERO BANNER
+                ==================================== -->
+                <div class="3xl:h-237.5 2xl:h-225 sm:h-192 h-170 overflow-hidden relative trv-banner-1-wrap">
+                    <div class="trv-banner-1-rain-effect">
+                        <div class="absolute left-0 size-full z-2 rain front-row"></div>
+                        <div class="absolute left-0 size-full z-2 rain back-row"></div>
+                    </div>
+                    <video muted loop autoplay playsinline class="absolute left-1/2 top-1/2 -translate-1/2 object-cover size-full z-0">
+                        <source src="assets/images/video-1.mp4" type="video/mp4">
+                    </video>
+                    <div class="relative z-2 3xl:h-220 2xl:h-207.5 lg:h-171.25 h-195 lg:m-8.75 lg:rounded-3xl bg-black/35">
+                        <div class="xl:pt-50 md:pt-40 pt-37.5 md:pl-17.5 max-md:px-5 max-w-255">
+                            <span class="2xl:text-48 text-3xl leading-17.5 text-aquamist xl:pl-12.5 font-display block">Explore</span>
+                            <div class="relative">
+                                <h1 class="!font-display 2xl:!text-62xl xl:!text-45xl md:!text-32xl !text-80 !text-white relative inline-block animate-slide-left" title="Vietnam">Vietnam</h1>
+                                <img src="assets/images/butterfly.gif" alt="image" class="absolute 2xl:top-15 xl:top-6 md:top-3 -top-5 z-9 2xl:right-5 xl:right-65 lg:right-85 sm:right-50 right-0 xl:w-50 w-37.5">
+                                <h1 class="!font-display 2xl:!text-62xl xl:!text-45xl md:!text-32xl !text-80 !text-transparent absolute left-0 top-0 z-1 [-webkit-text-stroke:2px_#fff] animate-slide-left" title="Vietnam">Vietnam</h1>
+                            </div>
+                            <span class="absolute 2xl:-bottom-8.75 xl:-bottom-12.5 bottom-0 xl:left-25 left-12.5 max-2xl:max-w-108 max-xl:max-w-75 max-md:hidden">
+                                <img src="assets/images/main-slider/slider1/Rock.png" alt="Image" width="582" height="473">
+                            </span>
+                            <div class="text-lg leading-7.5 text-white relative 2xl:ml-175 xl:ml-120 xl:max-w-57.5 w-full mb-7.5">The Safety of our customers at all stages</div>
+                            <div class="2xl:ml-187.5 xl:ml-120 relative z-[4]"><a href="contact.html" class="site-button butn-bg-shape">Get In Touch</a></div>
+                        </div>
+                        <div class="text-white absolute bottom-7.5 3xl:right-112.5 2xl:right-64.5 sm:right-10 right-5 flex items-center z-4">
+                            <span class="pr-26.25 text-xs leading-4.5 tracking-[0.2em] uppercase relative inline-block after:content-[''] after:absolute after:w-16 after:h-px after:bg-white after:right-5 after:top-1/2 after:-translate-y-1/2 max-sm:hidden">Follow Us</span>
+                            <ul class="flex">
+                                <li><a href="https://www.facebook.com" target="_blank" class="text-white text-xl ml-5 duration-500 block hover:text-secondary hover:-translate-y-1.25"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.linkedin.com" target="_blank" class="text-white text-xl ml-5 duration-500 block hover:text-secondary hover:-translate-y-1.25"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank" class="text-white text-xl ml-5 duration-500 block hover:text-secondary hover:-translate-y-1.25"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.x.com" target="_blank" class="text-white text-xl ml-5 duration-500 block hover:text-secondary hover:-translate-y-1.25"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="absolute inset-0 z-[3] overflow-hidden max-lg:hidden">
+                            <div class="absolute top-1/2 -translate-y-1/2 size-175 right-0">
+                                <div class="-right-4/5 absolute z-2 rotate-center animate-rotate-center"><span class="size-175 rounded-full border border-white/30 block relative after:size-3.5 after:bg-white after:rounded-full after:absolute after:right-8.75 after:top-1/4 after:z-10"></span></div>
+                            </div>
+                            <div class="absolute top-1/2 -translate-y-1/2 size-225 right-0">
+                                <div class="right-[-70%] absolute z-2 animate-rotate-center"><span class="size-225 rounded-full border border-white/30 block relative after:size-3.5 after:bg-secondary after:rounded-full after:absolute after:right-18.75 after:bottom-1/5 after:z-10"></span></div>
+                            </div>
+                            <div class="absolute top-1/2 -translate-y-1/2 size-275 right-0">
+                                <div class="-right-3/5 absolute z-2 animate-rotate-center"><span class="size-275 rounded-full border border-white/30 block relative after:size-3.5 after:bg-citrusyellow after:rounded-full after:absolute after:left-0.75 after:top-2/5 after:z-10"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 bottom-0 z-10">
+                        <div class="xl:max-w-82.5 max-w-57.5 animate-rotate-90-br-cw">
+                            <img src="assets/images/lizard.png" alt="Image" class="w-full" width="330" height="346">
+                            <img src="assets/images/li-eye.gif" alt="image" class="absolute bottom-[70%] left-[24%] w-10">
+                        </div>
+                    </div>
+                    <div class="absolute top-37.5 w-full">
+                        <div class="inline-block whitespace-nowrap animate-moveCloud">
+                            <img src="assets/images/cloud-1.png" alt="Image" class="w-auto" width="400" height="332">
+                        </div>
+                    </div>
+                    <div class="absolute top-0 w-full">
+                        <div class="inline-block whitespace-nowrap animate-moveCloud">
+                            <img src="assets/images/cloud-2.png" alt="Image" class="w-auto" width="297" height="225">
+                        </div>
+                    </div>
+                </div>
+                <!-- HERO BANNER END -->
+
+
+                <!-- ====================================
+                     KASHI SIGNATURE SECTION
+                ==================================== -->
+                <section class="kashi-signature-section section-reveal" id="kashiSection">
+
+                    <div class="kashi-split">
+                        <div class="kashi-img-col">
+                            <img src="assets/images/kashi/kashi-hero.jpg" alt="Kashi — The Eternal City of Varanasi">
+                        </div>
+
+                        <div class="kashi-content-col">
+                            <div class="kashi-inner">
+                                <span class="kashi-label">Tourific's Signature Destination</span>
+                                <h2 class="kashi-headline">Kashi, beyond<br>a destination.</h2>
+                                <p class="kashi-desc">Feel the timeless rhythm of the Ganga, explore ancient temples, wander through sacred lanes, and witness the mesmerizing evening aarti — all with Tourific.</p>
+                                <div class="kashi-ctas">
+                                    <a href="tour-1-grid.html" class="kashi-btn-primary">
+                                        Explore Kashi <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a href="tour-1-grid.html" class="kashi-btn-text">
+                                        View all tours <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Must-Visit Locations Sliding Marquee (cards are generated by script below) -->
+                    <div class="kashi-marquee-section">
+                        <p class="kashi-marquee-title">Must-Visit Landmarks of Kashi</p>
+                        <div class="kashi-marquee-wrap" id="kashiMarqueeWrap">
+                            <div class="kashi-marquee-track" id="kashiMarqueeTrack"></div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- KASHI SIGNATURE SECTION END -->
+
+
+                <!-- ====================================
+                     TOP TRENDING DESTINATION
+                ==================================== -->
+                <div class="xl:pt-30 pt-17.5 xl:pb-22.5 pb-10 bg-[url(../images/Map.png)] bg-eggshell dark:bg-eggshell/5 section-reveal">
+                    <div class="container">
+                        <div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5">
+                            <h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Top <span class="text-citrusyellow"> Trending </span> Destination</h2>
+                            <p class="text-base">Explore our special travel packages and unforgettable journeys.</p>
+                            <div class="-mt-7">
+                                <img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 max-w-full inline-block dark:invert" width="470" height="70">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="swiper trv-tsmo-banner !pb-29">
+                                <div class="swiper-wrapper">
+                                    <!-- PACKAGE 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="mx-auto mb-7.5 flex justify-between swiper-slides-center text-white xl:py-15 xl:px-20 p-7.5 rounded-xl w-full overflow-hidden bg-cover relative z-1 bg-[url(../images/explore-tour/1.jpg)] after:absolute after:left-0 after:top-0 after:size-full after:bg-linear-[var(--black-gradient2)] after:-z-1 max-lg:after:w-[160%] after:opacity-[0.95]">
+                                            <div class="flex-1 max-w-125">
+                                                <h3 class="md:text-32 text-xl !text-citrusyellow !font-display mb-2.5">Only Kashi</h3>
+                                                <p class="text-base text-[#e0e0e0] mb-6.25">Experience the spiritual beauty of Kashi with our special Kashi tour package.</p>
+                                                <a href="#" class="site-button butn-bg-shape">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- PACKAGE 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="mx-auto mb-7.5 flex justify-between swiper-slides-center text-white xl:py-15 xl:px-20 p-7.5 rounded-xl w-full overflow-hidden bg-cover relative z-1 bg-[url(../images/explore-tour/2.jpg)] after:absolute after:left-0 after:top-0 after:size-full after:bg-linear-[var(--black-gradient2)] after:-z-1 max-lg:after:w-[160%] after:opacity-[0.95]">
+                                            <div class="flex-1 max-w-125">
+                                                <h3 class="md:text-32 text-xl !text-citrusyellow !font-display mb-2.5">Kashi / Prayag / Ayodhya</h3>
+                                                <p class="text-base text-[#e0e0e0] mb-6.25">Discover the spiritual destinations of Kashi, Prayag and Ayodhya in one memorable journey.</p>
+                                                <a href="#" class="site-button butn-bg-shape">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- PACKAGE 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="mx-auto mb-7.5 flex justify-between swiper-slides-center text-white xl:py-15 xl:px-20 p-7.5 rounded-xl w-full overflow-hidden bg-cover relative z-1 bg-[url(../images/explore-tour/3.jpg)] after:absolute after:left-0 after:top-0 after:size-full after:bg-linear-[var(--black-gradient2)] after:-z-1 max-lg:after:w-[160%] after:opacity-[0.95]">
+                                            <div class="flex-1 max-w-125">
+                                                <h3 class="md:text-32 text-xl !text-citrusyellow !font-display">Tadoba</h3>
+                                                <h2 class="md:text-42 my-2.5 font-bold !font-title !text-white">Tadoba Jangle </h2>
+                                                <p class="text-base text-[#e0e0e0] mb-6.25">Explore the wild side of Tadoba and experience an exciting wildlife adventure.</p>
+                                                <a href="#" class="site-button butn-bg-shape">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Narmada Parikrama removed -->
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TOP TRENDING DESTINATION END -->
+
+
+                <!-- ====================================
+                     CLIENT / PARTNER LOGOS
+                ==================================== -->
+                <div class="p-5 bg-light" id="partnerSection">
+                    <div class="py-5 bg-white border-4 border-dashed border-paleaqua dark:bg-white/10 dark:border-paleaqua/40">
+                        <div class="container">
+                            <div class="grid grid-cols-12 items-center">
+                                <div class="xl:col-span-3 col-span-12">
+                                    <div>
+                                        <h2 class="!font-black !leading-[1] xl:text-46 md:text-40 text-3xl max-xl:mb-5 max-xl:text-center">
+                                            <span class="!font-base text-citrusyellow block text-5xl !font-black">Our</span>
+                                            Partners
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="xl:col-span-9 col-span-12">
+                                    <!-- Moving logos (right to left) -->
+                                    <div class="partner-marquee">
+                                        <div class="partner-marquee-track">
+                                            <!-- Set 1 -->
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client1.png" alt="Partner 1"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client2.png" alt="Partner 2"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client3.png" alt="Partner 3"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/IATA.png" alt="IATA"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/BPV.png" alt="BPV"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/ETAA_log.png" alt="ETAA - Enterprising Travel Agents Association"></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/taap_logo.jpg" alt="TAAP - Travel Agents Association Pune"></a></div>
+                                            <!-- Set 2 (duplicate for seamless loop) -->
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client1.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client2.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/client3.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/IATA.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/BPV.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/ETAA_log.png" alt=""></a></div>
+                                            <div class="p-logo"><a href="about-1.html"><img src="assets/images/client-logo/dark/taap_logo.jpg" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CLIENT LOGO SECTION END -->
+
+
+                <!-- ====================================
+                     WE OFFER SERVICES
+                ==================================== -->
+                <div class="bg-primary relative overflow-hidden sm:pb-22.5 pb-10 sm:pt-30 pt-17.5 before:absolute before:left-0 before:right-0 before:bottom-0 before:z-0 2xl:before:h-55 sm:before:h-40 before:h-0 before:bg-lightturquoise section-reveal">
+                    <div class="container">
+                        <div class="relative z-1">
+                            <div class="grid grid-cols-12">
+                                <div class="lg:col-span-5 col-span-12 px-3.75">
+                                    <div class="relative z-1">
+                                        <img class="block sm:ml-21.5 pb-17.5 animate-slide-left max-xl:-bottom-73 max-lg:bottom-0 max-xl:relative max-lg:[position:inherit] size-auto" src="assets/images/Left-Man-Image.png" alt="image" width="50" height="127" loading="lazy">
+                                        <img class="absolute xl:bottom-0 lg:-bottom-60 bottom-10 left-0 size-auto" src="assets/images/travel-sites.png" alt="image" width="50" height="127" loading="lazy">
+                                        <div class="img-bg-shade"></div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-7 col-span-12 px-3.75">
+                                    <div class="trv-we-off-content">
+                                        <div class="lg:mr-22.5 text-left mb-15">
+                                            <h2 class="!text-white xl:text-46 md:text-40 text-3xl mb-2.5">We Offer Best <span class="text-citrusyellow">Travel Services</span></h2>
+                                            <p class="text-paleaqua mb-12.5 text-base">From flight bookings and comfortable stays to visa assistance, travel insurance, and foreign exchange, we provide reliable travel services designed to make your journey smooth, convenient, and hassle-free.</p>
+                                        </div>
+                                        <div class="grid grid-cols-12 gap-7.5">
+                                            <!-- Airline Ticketing -->
+                                            <div class="xl:col-span-4 md:col-span-6 col-span-12 mb-10">
+                                                <div class="relative text-center bg-white ml-3 rounded-tl-8xl rounded-br-8xl rounded-tr-2xl rounded-bl-2xl pt-8.75 px-4 pb-15">
+                                                    <div><span class="inline-block mb-7.5"><img src="assets/images/trv-icon/ship.png" alt="Image" class="max-w-16 w-full inline-block" style="filter: brightness(0) saturate(100%) invert(53%) sepia(72%) saturate(1711%) hue-rotate(188deg) brightness(100%) contrast(94%);" width="64" height="64" loading="lazy"></span></div>
+                                                    <div class="trv-icon-content"><h2 class="mb-3.75 text-2xl text-primary!">Airline Ticketing</h2><p class="p-text">Enjoy hassle-free flight bookings with reliable assistance, convenient options, and tickets arranged according to your travel requirements.</p></div>
+                                                    <div class="relative after:absolute after:-left-7 after:-top-10.25 after:size-0 after:border-t-[12px] after:border-t-transparent after:border-r-[12px] after:border-r-[#297BD4] after:border-b-[12px] after:border-b-transparent"><div class="absolute -left-7 -bottom-15 size-0 border-b-[90px] border-b-[#489CF6] border-r-[80px] border-r-transparent"><span class="text-xs/[1.5] font-medium block text-white font-title pt-9 px-2.5 pb-0">Step</span><div class="text-2xl font-black text-white pl-2.5">01</div></div></div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Booking -->
+                                            <div class="xl:col-span-4 md:col-span-6 col-span-12 mb-10">
+                                                <div class="relative text-center bg-white ml-3 rounded-tl-8xl rounded-br-8xl rounded-tr-2xl rounded-bl-2xl pt-8.75 px-4 pb-15">
+                                                    <div class="inline-block mb-7.5"><span><img src="assets/images/trv-icon/plane-booking.png" alt="Image" class="max-w-16 w-full inline-block" style="filter: brightness(0) saturate(100%) invert(64%) sepia(100%) saturate(1157%) hue-rotate(350deg) brightness(103%) contrast(103%);" width="64" height="64" loading="lazy"></span></div>
+                                                    <div class="trv-icon-content"><h2 class="mb-3.75 text-2xl text-primary!">Hotel Booking</h2><p class="p-text">Find comfortable stays that match your requirements, from hotels and resorts to guest houses and luxury accommodations.</p></div>
+                                                    <div class="relative after:absolute after:-left-7 after:-top-10.25 after:size-0 after:border-t-[12px] after:border-t-transparent after:border-r-[12px] after:border-r-[#BA7D0A] after:border-b-[12px] after:border-b-transparent"><div class="absolute -left-7 -bottom-15 size-0 border-b-[90px] border-b-[#FFAA0D] border-r-[80px] border-r-transparent"><span class="text-xs/[1.5] font-medium block text-white font-title pt-9 px-2.5 pb-0">Step</span><div class="text-2xl font-black text-white pl-2.5">02</div></div></div>
+                                                </div>
+                                            </div>
+                                            <!-- Visa Assistance -->
+                                            <div class="xl:col-span-4 col-span-12 mb-10">
+                                                <div class="relative text-center bg-white ml-3 rounded-tl-8xl rounded-br-8xl rounded-tr-2xl rounded-bl-2xl pt-8.75 px-4 pb-15">
+                                                    <div class="inline-block mb-7.5"><span><img src="assets/images/trv-icon/guide-icon.png" alt="Image" class="max-w-16 w-full inline-block" style="filter: brightness(0) saturate(100%) invert(67%) sepia(36%) saturate(2222%) hue-rotate(38deg) brightness(102%) contrast(101%);" width="64" height="64" loading="lazy"></span></div>
+                                                    <div class="trv-icon-content"><h2 class="mb-3.75 text-2xl text-primary!">Visa Assistance</h2><p class="p-text">Get professional guidance with visa documentation and application requirements for a smooth and well-prepared international journey.</p></div>
+                                                    <div class="relative after:absolute after:-left-7 after:-top-10.25 after:size-0 after:border-t-[12px] after:border-t-transparent after:border-r-[12px] after:border-r-[#568603] after:border-b-[12px] after:border-b-transparent"><div class="absolute -left-7 -bottom-15 size-0 border-b-[90px] border-b-[#85D200] border-r-[80px] border-r-transparent"><span class="text-xs/[1.5] font-medium block text-white font-title pt-9 px-2.5 pb-0">Step</span><div class="text-2xl font-black text-white pl-2.5">03</div></div></div>
+                                                </div>
+                                            </div>
+                                            <!-- Travel Insurance -->
+                                            <div class="xl:col-span-4 md:col-span-6 col-span-12 mb-10">
+                                                <div class="relative text-center bg-white ml-3 rounded-tl-8xl rounded-br-8xl rounded-tr-2xl rounded-bl-2xl pt-8.75 px-4 pb-15">
+                                                    <div class="inline-block mb-7.5"><span><img src="assets/images/trv-icon/guide-icon.png" alt="Image" class="max-w-16 w-full inline-block" style="filter: brightness(0) saturate(100%) invert(53%) sepia(72%) saturate(1711%) hue-rotate(188deg) brightness(100%) contrast(94%);" width="64" height="64" loading="lazy"></span></div>
+                                                    <div class="trv-icon-content"><h2 class="mb-3.75 text-2xl text-primary!">Travel Insurance</h2><p class="p-text">Protect your journey with travel insurance options covering unexpected situations such as medical emergencies, baggage loss, and travel-related disruptions.</p></div>
+                                                    <div class="relative after:absolute after:-left-7 after:-top-10.25 after:size-0 after:border-t-[12px] after:border-t-transparent after:border-r-[12px] after:border-r-[#297BD4] after:border-b-[12px] after:border-b-transparent"><div class="absolute -left-7 -bottom-15 size-0 border-b-[90px] border-b-[#489CF6] border-r-[80px] border-r-transparent"><span class="text-xs/[1.5] font-medium block text-white font-title pt-9 px-2.5 pb-0">Step</span><div class="text-2xl font-black text-white pl-2.5">04</div></div></div>
+                                                </div>
+                                            </div>
+                                            <!-- Foreign Exchange -->
+                                            <div class="xl:col-span-4 md:col-span-6 col-span-12 mb-10">
+                                                <div class="relative text-center bg-white ml-3 rounded-tl-8xl rounded-br-8xl rounded-tr-2xl rounded-bl-2xl pt-8.75 px-4 pb-15">
+                                                    <div class="inline-block mb-7.5"><span><img src="assets/images/trv-icon/plane-booking.png" alt="Image" class="max-w-16 w-full inline-block" style="filter: brightness(0) saturate(100%) invert(64%) sepia(100%) saturate(1157%) hue-rotate(350deg) brightness(103%) contrast(103%);" width="64" height="64" loading="lazy"></span></div>
+                                                    <div class="trv-icon-content"><h2 class="mb-3.75 text-2xl text-primary!">Foreign Exchange</h2><p class="p-text">Make your international travel convenient with foreign currency, Forex cards, and remittance services designed for your travel needs.</p></div>
+                                                    <div class="relative after:absolute after:-left-7 after:-top-10.25 after:size-0 after:border-t-[12px] after:border-t-transparent after:border-r-[12px] after:border-r-[#BA7D0A] after:border-b-[12px] after:border-b-transparent"><div class="absolute -left-7 -bottom-15 size-0 border-b-[90px] border-b-[#FFAA0D] border-r-[80px] border-r-transparent"><span class="text-xs/[1.5] font-medium block text-white font-title pt-9 px-2.5 pb-0">Step</span><div class="text-2xl font-black text-white pl-2.5">05</div></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rounded-full 2xl:h-50 2xl:mb-7.5 overflow-hidden">
+                                            <img src="assets/images/landscape-pic.jpg" alt="image" class="w-full" width="726" height="199" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 2xl:bottom-55 bottom-40"><img src="assets/images/building-1.png" alt="Image" width="301" height="640" loading="lazy"></div>
+                    <div class="absolute md:right-0 sm:-right-20 -right-38 md:top-0 sm:-top-3 -top-12"><img src="assets/images/Right-top-plane.png" alt="Image" width="257" height="342" loading="lazy"></div>
+                </div>
+                <!-- WE OFFER SERVICES END -->
+
+<!-- ====================================
+     EXPLORE POPULAR TOURS START
+==================================== -->
+
+<section class="bg-lightturquoise sm:mx-15 xl:pb-26.5 pb-5 xl:pt-30 pt-12.5 section-reveal">
+    <div class="container-fluid">
+
+        <!-- Section Heading -->
+        <div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5 px-4">
+            <h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">
+                Explore Popular<span class="text-citrusyellow"> Tours!</span>
+            </h2>
+
+            <p class="text-base">
+                Destinations worth exploring! Here are a few popular spots
+            </p>
+
+            <div class="-mt-7">
+                <img
+                    src="./assets/images/background/Title-Separator.png"
+                    alt="Decorative title separator"
+                    class="w-117.5 max-w-full inline-block dark:invert"
+                    width="470"
+                    height="70"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+
+        <!-- Tours Slider -->
+        <div>
+            <div class="swiper trv-tours-st1 xl:!pb-29 !pb-22.5">
+
+                <div class="swiper-wrapper">
+
+                    <!-- 1. Bhutan -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./Bhutan.html" aria-label="Explore Bhutan">
+                                    <img
+                                        src="./assets/images/tour/style1/Bhutan.jpg"
+                                        alt="Bhutan tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>4 Nights / 5 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./Bhutan.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Bhutan
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./Bhutan.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 2. Dubai -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./dubai.html" aria-label="Explore Dubai">
+                                    <img
+                                        src="./assets/images/tour/style1/Dubai.jpg"
+                                        alt="Dubai tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>4 Nights / 5 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./dubai.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Dubai
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./dubai.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 3. Nepal -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./Nepal.html" aria-label="Explore Nepal">
+                                    <img
+                                        src="./assets/images/tour/style1/Nepal.jpg"
+                                        alt="Nepal tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>4 Nights / 5 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./Nepal.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Nepal
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./Nepal.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 4. Thailand -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./Thailand.html" aria-label="Explore Thailand">
+                                    <img
+                                        src="./assets/images/tour/style1/Thailand.jpg"
+                                        alt="Thailand tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>5 Nights / 6 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./Thailand.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Thailand
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./Thailand.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 5. Leh Ladakh -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./leh-ladak.html" aria-label="Explore Leh Ladakh">
+                                    <img
+                                        src="./assets/images/tour/style1/Leh%20Ladakh.jpg"
+                                        alt="Leh Ladakh tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>5 Nights / 6 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./leh-ladak.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Leh Ladakh
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./leh-ladak.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 6. Kerala -->
+                    <div class="swiper-slide">
+                        <div class="mx-3.75">
+
+                            <div class="rounded-tl-3xl rounded-tr-3xl overflow-hidden relative">
+                                <a href="./Kerala.html" aria-label="Explore Kerala">
+                                    <img
+                                        src="./assets/images/tour/style1/Kerala%20Tour.jpg"
+                                        alt="Kerala tour"
+                                        class="xl:h-105 h-80 w-full object-cover object-center"
+                                        width="309"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                </a>
+
+                                <div class="absolute top-7.5 left-0 py-2.5 px-5 bg-primary text-white font-semibold text-sm rounded-tr-5xl rounded-br-5xl flex items-center">
+                                    <i class="text-xl mr-2.5 fa-regular fa-calendar-days"></i>
+                                    <span>5 Nights / 6 Days</span>
+                                </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 py-3.75 px-7.5 bg-caribbeanlight backdrop-blur duration-500">
+                                    <h3 class="2xl:text-28 text-2xl font-medium">
+                                        <a href="./Kerala.html" class="text-white">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            Kerala Tour
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-7.5 rounded-bl-3xl rounded-br-3xl shadow-[0px_18px_18px_rgba(0,106,114,0.15)]">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="trv-book">
+                                        <a href="./Kerala.html" class="site-button outline">
+                                            Book Now
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <span>(4.8 Review)</span>
+                                        <div class="text-citrusyellow" aria-label="5 stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="swiper-button-next" aria-label="Next tours"></div>
+                <div class="swiper-button-prev" aria-label="Previous tours"></div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ====================================
+     EXPLORE POPULAR TOURS END
+==================================== -->
+
+
+
+                <!-- ====================================
+                     WHY CHOOSE TOURIFIC
+                ==================================== -->
+                <div class="bg-light lg:pt-30 section-reveal">
+                    <div class="container">
+                        <div class="grid grid-cols-12">
+                            <div class="xl:col-span-5 lg:col-span-7 col-span-12 px-3.75 max-lg:mb-40">
+                                <div class="2xl:mb-30 mb-10 relative">
+                                    <div class="text-left 2xl:mb-15 mb-10">
+                                        <h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Why <span class="text-citrusyellow">Choose Tourific</span></h2>
+                                        <p class="2xl:mb-12.5 mb-7 sm:pr-8.75 text-base">Tourific is your trusted travel partner for unforgettable journeys. We specialize in domestic getaways, business tours, customized packages, and exciting travel experiences. Whether you're exploring India's hidden gems or discovering new destinations, Tourific makes sure every trip becomes an unforgettable experience filled with memories that last a lifetime.</p>
+                                    </div>
+                                    <div class="mb-5 flex max-sm:flex-wrap">
+                                        <div class="sm:w-35 w-full sm:h-51 h-40 p-2.25 bg-white rounded-3xl flex min-w-35 sm:mr-7.5 max-sm:mb-10">
+                                            <div class="bg-primary shadow-[0px_4px_4px_rgba(0,0,0,0.25)] p-2.5 rounded-2xxl text-center flex flex-col items-center justify-center w-full">
+                                                <span class="text-38 text-citrusyellow font-black block">100%</span>
+                                                <span class="text-white text-2xl font-title font-medium block">Travel Care</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex mb-7.5 trv-icon-bx-st1">
+                                                <div class="bg-no-repeat size-21.25 min-w-21.25 bg-cover mr-7.5 flex items-center justify-center bg-[url(../images/trv-icon/Icon-Bg.png)] trv-icon-bx-media"><span><img src="assets/images/trv-icon/travel-guide.png" alt="travel-guide" width="48" height="49" loading="lazy" class="max-w-12"></span></div>
+                                                <div><h2 class="mb-3 font-medium text-2xl">Handpicked Tours</h2><p>Tourific offers carefully selected tour packages featuring unforgettable adventures, cultural experiences, and exciting destinations to make every journey truly memorable.</p></div>
+                                            </div>
+                                            <div class="flex mb-7.5 trv-icon-bx-st1">
+                                                <div class="bg-no-repeat size-21.25 min-w-21.25 bg-cover mr-7.5 flex items-center justify-center bg-[url(../images/trv-icon/Icon-Bg.png)] trv-icon-bx-media"><span><img src="assets/images/trv-icon/mission-icon.png" alt="mission-icon" width="48" height="49" loading="lazy" class="max-w-12"></span></div>
+                                                <div><h2 class="mb-3 font-medium text-2xl">Customized Package</h2><p>Create memories that last a lifetime with customized vacation packages designed around your travel needs, interests, preferences, and budget.</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sm:flex items-center"><div class="mr-3"><a href="about-1.html" class="site-button butn-bg-shape">Get to Know Us</a></div></div>
+                                </div>
+                            </div>
+                            <div class="xl:col-span-7 lg:col-span-5 col-span-12 relative px-3.75">
+                                <div class="absolute z-1 lg:top-7.5 -top-40.5 3xl:-right-36.25 lg:-right-0.25 -right-6.25 animate-slide-top max-md:hidden">
+                                    <div class="absolute lg:-left-27.5 -left-22.5 bottom-1.25"><img src="assets/images/plane1.png" alt="image" class="max-lg:max-w-80" width="384" height="193" loading="lazy"></div>
+                                    <div class="bg-white rounded-xl py-1 lg:pl-13.75 pl-10.75 pr-6 inline-flex items-center lg:w-88 w-70"><h2 class="!font-display !font-black lg:!text-83 !text-6xl leading-none !text-secondary !mb-0 !text-shadow-[0px_4px_0px_var(--color-primary)] !mr-6.75">Go</h2><span class="font-black lg:text-28 text-2xl leading-[1.2] text-primary">Explore With Us</span></div>
+                                </div>
+                                <div class="mt-3 xl:size-105 sm:size-90 size-70 border-[20px] border-white rounded-full shadow-[0px_27px_35.9px_rgba(41,137,145,0.2)] max-xl:relative max-xl:-bottom-41.25 max-lg:bottom-1/2 max-lg:translate-x-1/2 max-md:translate-x-0"><img src="assets/images/we-rec-pic2.jpg" alt="image" class="w-full rounded-full" width="380" height="380" loading="lazy"></div>
+                                <div class="absolute 3xl:-right-43.75 right-0.25 bottom-0 max-lg:w-[80%]"><img src="assets/images/we-rec-pic.png" alt="Image" width="764" height="586" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WHY CHOOSE END -->
+
+
+                <!-- ====================================
+                     TESTIMONIALS
+                ==================================== -->
+				<div class="xl:pt-30 pt-12.5 xl:pb-26.5 pb-5 relative bg-white dark:bg-dark section-reveal">
+					<div class="container">
+						<!-- TITLE START-->
+						<div class="sm:mb-15 mb-7.5 max-w-150 mx-auto text-center">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Our Client<span class="text-citrusyellow"> Says!</span></h2>
+							<div class="text-base">Destinations worth exploring! Here are a few popular spots</div>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert" width="470" height="70" loading="lazy">
+							</div>
+						</div>
+						<!-- TITLE END-->
+						<div class="grid grid-cols-12">
+				<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic1.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Mrs. Nilambari S.</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+										नमस्कार मित्रांनो Tourific Travel ki jay ट्रीप एकदम मस्त झाली.आपला ग्रुप फारच छान आहे ,आमच्या जिजाने खुप खुप एन्जॉय केला Tourific ने खुप मेहनत घेऊन आमची सोय छान केली खूपच धमाल आली..
+										</p>
+									</div>
+								</div>
+							</div>
+							
+			
+							
+				<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic2.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Mrs. Devashree Deshpande</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Traveler</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+										Thank you Tourific team for your endless effort and support to make this happen, to make our parents first international trip happen, to make our parents enjoy to the eternity.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+			
+							
+				<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic3.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Mrs. Sneha</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Tourist</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+										टुरिफीक ट्रॅव्हल कंपनी चे श्री. हर्षद व सौ. अर्चना सप्तर्षी आणि त्यांचा पडद्या मागील ऑफिस स्टाफ, तुम्हा सर्वांचे कौतुक करावे तेव्हढे कमीच आहे.. तुमचे दुबई टूर मधील उत्तम आयोजन,अप्रतिम जेवणाची सोय आणि आम्हा ज्येष्ठांची श्रावण बाळ व पुंडलीका प्रमाणे तुम्ही काळजी घेतली आहे..
+										</p>
+									</div>
+								</div>  
+							</div>
+							
+			
+							
+				<div class="sm:col-span-6 col-span-12">
+								<div class="lg:mx-17.5 mx-2.5 mb-12.5 mt-0">
+									<div class="mb-7.5 relative max-w-76.5 max-md:mx-auto">
+										<img src="assets/images/trv-testimonial/pic4.jpg" alt="image" class="rounded-3xl rounded-es-none" width="306" height="297" loading="lazy">
+		
+										<div class="inline-flex items-center bg-primary rounded-2xl rounded-ss-none absolute left-0 -bottom-2.5 py-1.25 px-3.75">
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+											<i class="fa-solid fa-star text-citrusyellow text-base mr-0.75"></i>
+										</div>
+									</div>
+									<div class="info">
+										<div class="flex items-start justify-between mb-6.25">
+											<div class="left-part">
+												<h2 class="lg:text-4xl text-28 font-normal text-primary !font-display">Mrs. Akanksha Rawatale</h2>
+												<span class="font-title text-xl font-medium text-citrusyellow inline-block">Traveler</span>
+											</div>
+											<div class="right-part">
+												<img src="assets/images/trv-icon/Quote.png" alt="Quote.png" class="lg:max-w-17.5 max-w-11 max-h-14.5 image-filter-2" style="filter: brightness(0) saturate(100%) invert(25%) sepia(21%) saturate(4469%) hue-rotate(154deg) brightness(93%) contrast(95%);" width="70" height="58" loading="lazy">
+											</div>
+										</div>
+										<p class="font-title lg:text-2xl text-lg text-primary dark:text-paleaqua max-md:text-center">
+										It's really fun to watch you all .. N trying hukka is something out of the box..i never thought that my parents ever will try hukka But thanks to tourific team , u people are making them to try these things…It's really cool to watch them in their Never before Avatar.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+			
+						</div>
+					</div>
+				</div>
+
+                <!-- TESTIMONIALS END -->
+
+
+                <!-- ====================================
+                     ADVENTURE SECTION
+                ==================================== -->
+                <div class="py-22.5 bg-cover relative text-center overflow-hidden bg-[url(../images/background/adv-bg.jpg)] trv-adventure-st1">
+                    <div class="rounded-full inline-block relative mb-0 circle-text2">
+                        <div class="bg-primary rounded-full sm:size-55 size-50 flex items-center justify-center emblem-wrap">
+                            <div class="font-base text-xs font-normal tracking-[10px] uppercase mx-auto sm:size-50 size-45 rounded-full text-white text-center bg-transparent animate-spinZ emblem">Want-to-see-our-top-destinations-</div>
+                            <i class="mx-auto sm:size-31 size-25 text-center flex items-center justify-center rounded-full bg-[#0A747C] absolute left-1/2 top-1/2 -translate-1/2 overflow-hidden"><img src="assets/images/advanture-st1.png" alt="In Circle Pic" class="h-auto sm:max-w-18.5 max-w-15.5" width="74" height="74" loading="lazy"></i>
+                        </div>
+                    </div>
+                    <h2 class="!font-display leading-[1] xl:!text-50xl md:!text-30xl sm:!text-80 !text-40 px-7.5 !font-normal !text-white md:text-shadow-[2px_5px_0px_rgba(255,255,255,0.72)] max-sm:mt-7.5">Adventure</h2>
+                    <p class="font-title uppercase xl:text-50 sm:text-3xl text-22 leading-[1.2] font-normal text-white sm:mb-7.5 max-sm:my-2.5">It's time to Travel </p>
+                    <a href="contact.html" class="site-button butn-bg-shape">Booking Now</a>
+                </div>
+                <!-- ADVENTURE SECTION END -->
+
+            </div><!-- /.page-content -->
+
+
+            <!-- ====================================
+                 FOOTER
+            ==================================== -->
+            <footer class="pt-20 bg-primary bg-cover bg-[url(../images/background/ftr-dark-bg.png)]">
+                <div class="container">
+                    <div class="sm:pt-20 pt-6 pb-4 text-white/06 border-b border-primary dark:border-white/15">
+                        <div class="grid grid-cols-12 gap-y-6">
+
+                            <!-- Logo + About + Social -->
+                            <div class="lg:col-span-3 col-span-12 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <div class="mb-6 block">
+                                        <a href="index.html"><img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-footer-logo" loading="lazy"></a>
+                                    </div>
+                                    <p class="sm:pr-6 mb-4 text-base text-white">Tourific Travel Services is a multifaceted travel agency and tour operator providing totally reliable competitively tour and travel solutions.</p>
+                                    <ul class="mt-5 flex flex-wrap gap-y-2">
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Quick Links</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="index.html">Home</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="about-1.html">About Us</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="tour-1-grid.html">Domestic</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="international.html">International</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="wildlife.html">Wildlife</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Explore -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Explore</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="services.html">Services</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="testimonial.html">Reviews</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="videos.html">Videos</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="gallery.html">Gallery</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact Us -->
+                            <div class="lg:col-span-5 col-span-12 sm:px-3.75 tf-footer-col tf-footer-contact">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Contact Us</h3>
+                                    <ul>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-phone text-lg text-white"></i>
+                                            </div>
+                                            <a href="tel:+919021135384"><span class="text-xl text-citrusyellow font-semibold">+91 9021135384</span></a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-envelope text-lg text-white"></i>
+                                            </div>
+                                            <a class="text-paleaqua font-semibold text-base" href="mailto:archana@tourific.in">archana@tourific.in</a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Pune:- </b>397/1/2, Building No. 7A, Flat No.2, 'Agrasen Nagar' Housing Society, Kundan Nagar, Opp. Atlas Copco, Dapodi, Pune-411012</span>
+                                        </li>
+                                        <li class="relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Nashik:- </b>SHREE SATYANARAYAN ROONGTA FORUM Shop No.6001 Near City Center Mall, Dr. Babasaheb Ambedkar Rd, near DR BR, Lavate Nagar, Parijat Nagar, Nashik, Maharashtra 422005</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="py-10 text-white relative z-1 font-normal after:absolute after:bg-primary after:max-w-135 after:h-px after:left-1/2 after:top-0 after:-translate-x-1/2">
+                        <div class="container">
+                            <p class="copyrights-text text-center text-sm font-semibold">© <span class="current-year">2026</span> <a href="index.html"><span class="inline-block text-citrusyellow uppercase text-center text-sm font-semibold">Tourific Travel</span></a> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+
+        </div><!-- /#smooth-content -->
+    </div><!-- /#smooth-wrapper -->
+
+    <!-- BACK TO TOP -->
+    <button class="scroltop" aria-label="Scroll to top"><span class="fa fa-angle-up relative" id="btn-vibrate" aria-hidden="true"></span></button>
+</div><!-- /.page-wraper -->
+
+
+<!-- JAVASCRIPT FILES -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendor/gsap/gsap.min.js"></script>
+<script src="assets/vendor/gsap/ScrollSmoother.js"></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/masonry/masonry-4.2.2.js"></script>
+<script src="assets/vendor/masonry/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.js"></script>
+<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendor/nouislider/nouislider.min.js"></script>
+<script src="assets/vendor/xmenu/xmenu.js"></script>
+<script src="assets/vendor/lightgallery/dist/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/zoom/lg-zoom.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="assets/js/theia-sticky-sidebar.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/dz.carousel.js"></script>
+<script src="assets/js/lc_lightbox.lite.js"></script>
+<script src="assets/js/dz.ajax.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<!-- ============================================================
+     CUSTOM ANIMATIONS & SCROLL EFFECTS
+============================================================ -->
+<script>
+(function () {
+    'use strict';
+
+    // ── 1. Section reveal: fade-up when section enters viewport ───────────
+    var revealEls = document.querySelectorAll('.section-reveal');
+    if (revealEls.length) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        revealEls.forEach(function (el) { revealObserver.observe(el); });
+    }
+
+    // ── 2. Kashi cards (generated; list duplicated for seamless loop) ─────
+    // Put photos in assets/images/kashi/ named exactly as the "img" values + .jpg
+    var kashiPlaces = [
+        {n:'Kashi Kotwal – Kal-Bhairav', i:'fa-shield-halved', img:'kal-bhairav', t:'The guardian deity of Kashi, whose blessing is sought first.'},
+        {n:'Dandapani Bhairav', i:'fa-gavel', img:'dandapani-bhairav', t:'A fierce protector who keeps order over the sacred city.'},
+        {n:'Omkareshwar Mahadev', i:'fa-om', img:'omkareshwar-mahadev', t:'An ancient Shiva shrine in the heart of old Kashi.'},
+        {n:'Bindu Madhav', i:'fa-landmark', img:'bindu-madhav', t:'A revered Vishnu temple overlooking Panchganga Ghat.'},
+        {n:'Mangla Gauri', i:'fa-spa', img:'mangla-gauri', t:'A sacred Shakti temple devoted to Goddess Gauri.'},
+        {n:'Dravid Shastri Vedpath Shala', i:'fa-book-open', img:'vedpath-shala', t:'A traditional centre of Vedic learning and chanting.'},
+        {n:'Chandra Koop', i:'fa-moon', img:'chandra-koop', t:'A holy ancient well with deep spiritual significance.'},
+        {n:'Pitamaheshwar Mahadev', i:'fa-place-of-worship', img:'pitamaheshwar-mahadev', t:'A timeless Shiva temple tucked into Kashi’s lanes.'},
+        {n:'Manikarnikeshwar Mahadev', i:'fa-fire-flame-curved', img:'manikarnikeshwar-mahadev', t:'The Shiva shrine near the sacred Manikarnika Ghat.'},
+        {n:'Atmaveereshwar Mahadev', i:'fa-landmark', img:'atmaveereshwar-mahadev', t:'A serene Mahadev temple known to devoted pilgrims.'},
+        {n:'Bruhaspateshwar Mahadev', i:'fa-star', img:'bruhaspateshwar-mahadev', t:'Believed to be worshipped by Guru Brihaspati himself.'},
+        {n:'Go-Preksheshwar Mahadev', i:'fa-leaf', img:'go-preksheshwar-mahadev', t:'A rare and peaceful Shiva shrine of ancient lore.'},
+        {n:'Kashi Vishwanath', i:'fa-landmark', img:'kashi-vishwanath', t:'One of the twelve Jyotirlingas and the soul of Kashi.'},
+        {n:'Annapurna Devi', i:'fa-bowl-rice', img:'annapurna-devi', t:'The goddess of nourishment who feeds the whole city.'},
+        {n:'Vishalakshi Mata – Shakti Peeth', i:'fa-sun', img:'vishalakshi-mata', t:'A powerful Shakti Peeth, home to Goddess Vishalakshi.'},
+        {n:'Gondavlekar Maharaj Sthapit Ram Mandir', i:'fa-place-of-worship', img:'gondavlekar-ram-mandir', t:'A calm Ram temple established by Gondavlekar Maharaj.'},
+        {n:'Khichadi Baba', i:'fa-hands-praying', img:'khichadi-baba', t:'A well-known spiritual seat, loved for its simple devotion.'},
+        {n:'Bandi Devi', i:'fa-place-of-worship', img:'bandi-devi', t:'A local shrine of deep faith within old Kashi.'},
+        {n:'Gauri Kedareshwar', i:'fa-mountain', img:'gauri-kedareshwar', t:'A beloved Shiva temple also known as Kedar Khand.'},
+        {n:'Keenaram Baba Ashram', i:'fa-house-chimney', img:'keenaram-baba-ashram', t:'A historic Aghor ashram and a place of deep meditation.'},
+        {n:'Mrutyunjayeshwar Mahadev', i:'fa-infinity', img:'mrutyunjayeshwar-mahadev', t:'The temple of Mahamrityunjaya, the conqueror of death.'}
+    ];
+    var kTrack = document.getElementById('kashiMarqueeTrack');
+    if (kTrack) {
+        var cardsHTML = kashiPlaces.map(function (p) {
+            return '<div class="kashi-loc-card">' +
+                '<div class="klc-img"><img src="assets/images/kashi/' + p.img + '.jpg" alt="' + p.n + '" loading="lazy" ' +
+                'onerror="this.onerror=null;this.src=\'assets/images/kashi/kashi-hero.jpg\';"></div>' +
+                '<div class="klc-body"><i class="fa-solid ' + p.i + ' klc-icon"></i>' +
+                '<h3 class="klc-title">' + p.n + '</h3><p class="klc-text">' + p.t + '</p>' +
+                '<button class="klc-arrow" aria-label="Explore"><i class="fa-solid fa-arrow-right"></i></button></div></div>';
+        }).join('');
+        kTrack.innerHTML = cardsHTML + cardsHTML;
+    }
+
+    // ── 3. Kashi section: reveal on scroll ────────────────────────────────
+    var kashiSection = document.getElementById('kashiSection');
+    if (kashiSection) {
+        var kashiObserver = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
+                kashiSection.classList.add('is-visible');
+                kashiObserver.disconnect();
+            }
+        }, { threshold: 0.05 });
+        kashiObserver.observe(kashiSection);
+    }
+
+    // ── 4. Kashi marquee: touch/drag support ──────────────────────────────
+    var marqueeWrap = document.getElementById('kashiMarqueeWrap');
+    var marqueeTrack = document.getElementById('kashiMarqueeTrack');
+    if (marqueeWrap && marqueeTrack) {
+        var isDragging = false;
+        var startX = 0;
+        var scrollLeft = 0;
+
+        marqueeWrap.addEventListener('mousedown', function (e) {
+            isDragging = true;
+            startX = e.pageX - marqueeWrap.offsetLeft;
+            scrollLeft = marqueeWrap.scrollLeft;
+            marqueeTrack.style.animationPlayState = 'paused';
+        });
+        marqueeWrap.addEventListener('mouseleave', function () {
+            isDragging = false;
+            marqueeTrack.style.animationPlayState = 'running';
+        });
+        marqueeWrap.addEventListener('mouseup', function () {
+            isDragging = false;
+            marqueeTrack.style.animationPlayState = 'running';
+        });
+        marqueeWrap.addEventListener('mousemove', function (e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            var x = e.pageX - marqueeWrap.offsetLeft;
+            var walk = (x - startX) * 2;
+            marqueeWrap.scrollLeft = scrollLeft - walk;
+        });
+
+        marqueeWrap.addEventListener('touchstart', function (e) {
+            startX = e.touches[0].pageX;
+            marqueeTrack.style.animationPlayState = 'paused';
+        }, { passive: true });
+        marqueeWrap.addEventListener('touchend', function () {
+            marqueeTrack.style.animationPlayState = 'running';
+        });
+        marqueeWrap.addEventListener('touchmove', function (e) {
+            var x = e.touches[0].pageX;
+            var walk = (startX - x) * 1.5;
+            marqueeWrap.scrollLeft += walk / 30;
+        }, { passive: true });
+    }
+
+})();
+</script>
+
+</body>
+</html>

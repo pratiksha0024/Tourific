@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+	<meta charset="UTF-8">
+
+	<!-- Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title -->
+	<title>Travlla - Travel & Tour Tailwind CSS Template | Dubai Tour</title>
+
+    <meta name="title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="keywords" content="travel HTML template, tour booking template, Tailwind travel website, tourism Tailwind template, holiday booking, responsive travel design, tour operator website, Travlla template, modern travel design, travel agency web design">
+    <meta name="author" content="DexignZone">
+    <meta name="robots" content="index, follow">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://travlla.dexignzone.com/tailwind/demo/tour-1-grid.html">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta property="og:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta property="og:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+    <meta property="og:url" content="https://travlla.dexignzone.com/demo/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Travlla">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travlla - Travel & Tour Tailwind CSS Template | DexignZone">
+    <meta name="twitter:description" content="Travlla is a responsive Travel & Tour Tailwind CSS template designed for travel agencies, tour operators, holiday planners, and booking websites.">
+    <meta name="twitter:image" content="https://travlla.dexignzone.com/tailwind/demo/social-image.png">
+
+    <!-- IE Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="assets/icons/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/flaticon/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/icons/feather/css/feather.css">
+		
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/flatpickr/css/flatpicker.css">
+	<link rel="stylesheet" href="assets/css/lc_lightbox.css">
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="assets/vendor/lightgallery/dist/css/lightgallery-bundle.min.css">
+	<link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+	<!-- Tour detail page styles -->
+	<style>
+    /* ===== Header logos ===== */
+    .tf-logo-main { height: 64px; width: auto; max-width: none; object-fit: contain; }
+    .tf-logo-side { height: 60px; width: auto; max-width: none; object-fit: contain; }
+    @media (min-width: 640px)  { .tf-logo-main { height: 72px; } .tf-logo-side { height: 68px; } }
+    @media (min-width: 1024px) { .tf-logo-main { height: 96px; } .tf-logo-side { height: 90px; } }
+
+    /* ===== Footer logo ===== */
+    .tf-footer-logo { width: 100%; max-width: 200px; height: auto; }
+
+    /* ===== General mobile safety ===== */
+    html, body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    @media (max-width: 767px) {
+        .tf-footer-contact a,
+        .tf-footer-contact span { word-break: break-word; overflow-wrap: anywhere; }
+        .tf-footer-col { text-align: left; }
+    }
+
+		.tpd-wrap{--tpd-gutter:clamp(16px,3.5vw,48px);width:100%;max-width:100%;margin:0;padding:0;overflow:hidden}
+		.tpd-info{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;padding:30px var(--tpd-gutter);border-bottom:1px solid rgba(0,0,0,.1)}
+		.tpd-info-item strong{display:block;font-size:18px;font-weight:700;color:var(--color-primary,#0A747C)}
+		.tpd-info-item span{font-size:15px}
+		.tpd-body{padding:50px var(--tpd-gutter) 60px}
+		/* booking form */
+		.tpd-booking{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding:70px var(--tpd-gutter);background:linear-gradient(rgba(10,116,124,.08),rgba(10,116,124,.08)),url(assets/images/background/booking-bg.jpg) center/cover no-repeat}
+		.tpd-form{width:100%;max-width:560px;margin-left:auto;padding:35px 30px;border-radius:24px;background:#fff;box-shadow:0 20px 40px rgba(10,116,124,.2)}
+		.tpd-form h3{margin-bottom:22px;font-size:32px;font-weight:700;text-align:center;color:var(--color-primary,#0A747C)}
+		.tpd-field{margin-bottom:18px;flex:1}
+		.tpd-field-row{display:flex;gap:15px}
+		.tpd-field label{display:block;margin-bottom:6px;font-size:15px;font-weight:600;color:var(--color-primary,#0A747C)}
+		.tpd-field label span{color:var(--color-citrusyellow,#FFA90A)}
+		.tpd-field input,.tpd-field textarea{display:block;width:100%;padding:0 16px;border:1px solid rgba(10,116,124,.25);border-radius:14px;background:#fff;color:#212529;font-size:15px;outline:none;transition:.3s}
+		.tpd-field input{height:52px}
+		.tpd-field textarea{padding:14px 16px;resize:vertical}
+		.tpd-field input:focus,.tpd-field textarea:focus{border-color:var(--color-primary,#0A747C);box-shadow:0 0 0 3px rgba(10,116,124,.15)}
+		.tpd-form .site-button{margin-top:6px;cursor:pointer}
+		/* slider */
+		.tpd-swiper{position:relative;margin-top:30px;padding-bottom:50px;overflow:hidden}
+		.tpd-swiper .swiper-slide img{display:block;width:100%;height:480px;object-fit:cover;border-radius:24px}
+		.tpd-swiper .swiper-pagination{bottom:8px}
+		.tpd-swiper .swiper-pagination-bullet{width:10px;height:10px;opacity:1;background:rgba(10,116,124,.3)}
+		.tpd-swiper .swiper-pagination-bullet-active{width:28px;border-radius:10px;background:var(--color-citrusyellow,#FFA90A)}
+		.tpd-nav{position:absolute;top:calc(50% - 25px);z-index:5;display:flex;align-items:center;justify-content:center;width:46px;height:46px;border:0;border-radius:50%;background:#fff;color:var(--color-primary,#0A747C);box-shadow:0 4px 14px rgba(0,0,0,.2);cursor:pointer;transition:.4s}
+		.tpd-nav:hover{background:var(--color-citrusyellow,#FFA90A);color:#fff}
+		.tpd-prev{left:14px}
+		.tpd-next{right:14px}
+		/* places to visit (timeline) */
+		.tpd-places{padding:0 var(--tpd-gutter) 70px}
+		.tpd-tl{--tl-bg:#FFF6E6;--tl-col:90px;padding:50px 50px 45px;border-radius:40px;background:var(--tl-bg)}
+		.tpd-tl-list{position:relative}
+		.tpd-tl-line{position:absolute;top:26px;left:calc(var(--tl-col) / 2 - 1.5px);z-index:0;width:3px;height:0;border-radius:3px;background:rgba(10,116,124,.18)}
+		.tpd-tl-fill{display:block;width:100%;height:0;border-radius:3px;background:linear-gradient(var(--color-primary,#0A747C),var(--color-citrusyellow,#FFA90A));transition:height .25s linear}
+		.tpd-tl-item{position:relative;z-index:1;display:grid;grid-template-columns:var(--tl-col) 1fr;gap:20px;margin-bottom:42px}
+		.tpd-tl-item:last-child{margin-bottom:0}
+		.tpd-tl-badge{display:flex;flex-direction:column;align-items:center}
+		.tpd-tl-num{display:flex;align-items:center;justify-content:center;width:52px;height:52px;box-sizing:border-box;border:5px solid var(--color-citrusyellow,#FFA90A);border-radius:50%;background:var(--color-primary,#0A747C);color:#fff;font-size:20px;font-weight:700}
+		.tpd-tl-badge small{margin-top:6px;padding:2px 6px;background:var(--tl-bg);font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#4a5a5c}
+		.tpd-tl-text h3{margin:2px 0 8px;font-size:24px;font-weight:700;line-height:1.25;color:var(--color-primary,#0A747C)}
+		.tpd-tl-text p{font-size:16px;line-height:1.7}
+		.tpd-tl-ready .tpd-tl-item{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
+		.tpd-tl-ready .tpd-tl-num{transform:scale(.4);transition:transform .5s .1s cubic-bezier(.34,1.56,.64,1)}
+		.tpd-tl-ready .tpd-tl-item.tpd-on{opacity:1;transform:none}
+		.tpd-tl-ready .tpd-tl-item.tpd-on .tpd-tl-num{transform:scale(1)}
+		/* inclusions */
+		.tpd-inc-sec{padding:70px var(--tpd-gutter);background:rgba(10,116,124,.06)}
+		.tpd-inc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+		.tpd-inc-card{position:relative;display:flex;align-items:center;gap:20px;padding:30px 26px;overflow:hidden;border:1px solid rgba(10,116,124,.2);border-radius:24px;background:#fff;transition:transform .5s,box-shadow .5s,opacity .7s}
+		.tpd-inc-card::before{content:"";position:absolute;inset:0;z-index:0;background:var(--color-primary,#0A747C);transform:translateY(101%);transition:transform .5s}
+		.tpd-inc-card:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(10,116,124,.25)}
+		.tpd-inc-card:hover::before{transform:translateY(0)}
+		.tpd-inc-num{position:absolute;top:10px;right:20px;z-index:1;font-size:44px;font-weight:800;line-height:1;color:rgba(10,116,124,.12);transition:.5s}
+		.tpd-inc-card:hover .tpd-inc-num{color:rgba(255,255,255,.2)}
+		.tpd-inc-icon{position:relative;z-index:1;display:flex;flex:0 0 72px;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:rgba(255,169,10,.15);color:var(--color-citrusyellow,#FFA90A);font-size:30px;transition:.6s}
+		.tpd-inc-card:hover .tpd-inc-icon{background:var(--color-citrusyellow,#FFA90A);color:#fff;transform:rotateY(360deg)}
+		.tpd-inc-text{position:relative;z-index:1}
+		.tpd-inc-text h3{margin-bottom:6px;font-size:20px;font-weight:700;line-height:1.25;color:var(--color-primary,#0A747C);transition:.5s}
+		.tpd-inc-text p{font-size:14px;line-height:1.5;transition:.5s}
+		.tpd-inc-card:hover h3,.tpd-inc-card:hover p{color:#fff}
+		/* about + why us */
+		.tpd-about{padding:80px var(--tpd-gutter) 40px}
+		.tpd-about-row{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;margin-bottom:90px}
+		.tpd-about-img{width:100%}
+		.tpd-about-img img{display:block;width:100%;height:auto;border-radius:24px;box-shadow:0 20px 40px rgba(10,116,124,.2)}
+		.tpd-highlights{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-bottom:30px}
+		.tpd-highlights li{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:600;color:var(--color-primary,#0A747C)}
+		.tpd-highlights i{color:var(--color-citrusyellow,#FFA90A)}
+		.tpd-why{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+		.tpd-why-card{display:flex;align-items:flex-start;gap:20px;padding:30px 26px;border:1px solid rgba(10,116,124,.2);border-radius:24px;background:#fff;transition:transform .5s,box-shadow .5s,opacity .7s}
+		.tpd-why-card:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(10,116,124,.18)}
+		.tpd-why-icon{display:flex;flex:0 0 64px;align-items:center;justify-content:center;width:64px;height:64px;border-radius:18px;background:var(--color-primary,#0A747C);color:var(--color-citrusyellow,#FFA90A);font-size:26px;transition:.5s}
+		.tpd-why-card:hover .tpd-why-icon{border-radius:50%;transform:rotate(360deg)}
+		.tpd-why-card h3{margin-bottom:6px;font-size:20px;font-weight:700;line-height:1.25;color:var(--color-primary,#0A747C)}
+		.tpd-why-card p{font-size:14px;line-height:1.5}
+		/* packages */
+		.tpd-packages{padding:40px var(--tpd-gutter) 70px}
+		.tpd-pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+		.tpd-card{display:flex;flex-direction:column;padding:10px;border:1px solid rgba(10,116,124,.2);border-radius:24px;background:#fff}
+		.tpd-card img{width:100%;height:260px;object-fit:cover;border-radius:18px}
+		.tpd-card h3{margin:18px 0 6px;font-size:22px;font-weight:600;text-align:center;color:var(--color-primary,#0A747C)}
+		.tpd-dur{margin-bottom:15px;font-size:14px;text-align:center}
+		.tpd-feat{display:grid;grid-template-columns:repeat(4,1fr);padding:14px 0;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);text-align:center}
+		.tpd-feat i{display:block;margin-bottom:6px;font-size:22px;color:var(--color-primary,#0A747C)}
+		.tpd-feat span{font-size:11px;font-weight:600;text-transform:uppercase;color:var(--color-citrusyellow,#FFA90A)}
+		.tpd-btn{padding:22px 0 12px;text-align:center}
+		/* scroll reveal */
+		.tpd-pre{opacity:0;transform:translateY(30px)}
+		.tpd-pre.tpd-in{opacity:1;transform:none}
+		/* dark mode */
+		html.dark .tpd-card,html.dark .tpd-inc-card,html.dark .tpd-why-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+		html.dark .tpd-tl{--tl-bg:#1d2a2c}
+		html.dark .tpd-tl-text h3{color:#fff}
+		html.dark .tpd-tl-badge small{color:#c9d6d8}
+		html.dark .tpd-inc-sec{background:rgba(255,255,255,.03)}
+		html.dark .tpd-form{background:rgba(255,255,255,.08)}
+		html.dark .tpd-form h3,html.dark .tpd-field label{color:#fff}
+		html.dark .tpd-info{border-color:rgba(255,255,255,.15)}
+		html.dark .tpd-inc-text h3,html.dark .tpd-why-card h3,html.dark .tpd-card h3,html.dark .tpd-highlights li{color:#fff}
+		@media (max-width:1199px){.tpd-inc-grid,.tpd-why,.tpd-pk-grid{grid-template-columns:repeat(2,1fr)}}
+		@media (max-width:991px){.tpd-about-row,.tpd-booking{grid-template-columns:1fr;gap:40px}.tpd-form{max-width:none}.tpd-swiper .swiper-slide img{height:380px}}
+		@media (max-width:767px){.tpd-tl{--tl-col:64px;padding:35px 20px}.tpd-tl-text h3{font-size:21px}.tpd-tl-text p{font-size:15px}.tpd-field-row{flex-direction:column;gap:0}.tpd-inc-grid,.tpd-why,.tpd-pk-grid{grid-template-columns:1fr}.tpd-swiper .swiper-slide img{height:260px}.tpd-highlights{grid-template-columns:1fr}}
+	</style>
+
+</head>
+<body id="bg" class="selection:bg-[#484848] selection:text-white">
+    
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+
+<!-- Curser Pointer -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<div class="page-wraper">
+	<!-- HEADER START -->
+	<header class="site-header sticky-header absolute lg:left-8.75 lg:right-8.75 lg:top-8.75 left-0 right-0 top-0 duration-500 z-999 [.site-header.is-fixed]:fixed [.site-header.is-fixed]:animate-header-scroll-animation [.site-header.is-fixed]:bg-primary [.site-header.is-fixed]:rounded-b-3xl [.site-header.is-fixed]:top-0">
+        <div class="main-bar-wraper">
+            <div class="w-full lg:min-h-30 min-h-20 lg:ps-8.75 px-4 lg:pe-13.75 duration-500 rounded-5xl flex items-center justify-between">
+                <div class="flex relative w-full items-center">
+
+                    <!-- MAIN LOGO -->
+                    <div class="flex items-center relative z-9 h-20 shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-logo-main duration-500">
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="xmenu-toggler lg:hidden float-right mt-4.5 mb-4 md:ml-7 ml-4 size-11 bg-dark-600 relative cursor-pointer max-lg:order-1" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-3.25 w-5.5"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-0 top-5.5 w-6.25"></span>
+                        <span class="block absolute left-2.5 h-0.5 rounded-px bg-white duration-300 top-8 w-4"></span>
+                    </button>
+                    <div class="lg:hidden fixed top-0 left-0 bg-black size-full duration-300 z-999 opacity-0 visible pointer-events-none menu-close fade-overlay"></div>
+
+                    <!-- NAVIGATION -->
+                    <div class="flex lg:justify-center lg:basis-auto lg:grow max-lg:flex-col justify-start font-base max-lg:fixed max-lg:h-screen max-lg:px-5 max-lg:top-0 max-lg:-left-75 max-lg:z-9999 max-lg:bg-white dark:max-lg:bg-dark max-lg:w-72 max-lg:overflow-auto max-lg:duration-700 header-nav custom-scroll">
+                        <div class="flex items-center relative z-9 py-6.25 lg:hidden">
+                            <a href="index.html" class="table-cell align-middle">
+                                <img src="assets/images/tourific-logo.png" alt="Tourific" class="object-contain duration-500 max-w-30 block">
+                            </a>
+                        </div>
+                        <ul class="lg:flex flex-wrap navbar-nav">
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="index.html"><span class="inline-block">Home</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="about-1.html"><span class="inline-block">About Us</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary after:ml-1 after:-mt-1 after:inline-block after:size-2.5 after:bg-arrow-down after:bg-no-repeat after:bg-bottom max-lg:after:hidden" href="tour-1-grid.html"><span class="inline-block">Tours</span><i class="fas fa-chevron-right lg:!hidden !block size-7 !leading-7 text-center text-xs bg-black text-white float-end"></i></a>
+                                <ul class="lg:absolute bg-white dark:bg-dark lg:rounded-xxl block lg:left-0 max-lg:ps-3.75 w-full lg:w-55 lg:opacity-0 lg:invisible lg:translate-y-10 z-10 mt-0 text-left duration-500 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0 max-lg:hidden sub-menu">
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="tour-1-grid.html"><span>Domestic</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="international.html"><span>International</span></a></li>
+                                    <li class="relative border-b border-black/5 dark:border-white/10"><a class="block relative text-sm text-heading font-semibold py-3 lg:px-5 duration-500 hover:text-primary dark:hover:text-paleaqua hover:pl-6.25" href="wildlife.html"><span>Wildlife</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="services.html"><span class="inline-block">Services</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="testimonial.html"><span class="inline-block">Reviews</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="videos.html"><span class="inline-block">Videos</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="gallery.html"><span class="inline-block">Gallery</span></a>
+                            </li>
+                            <li class="lg:inline-block block max-lg:border-b max-lg:border-gray-200 dark:max-lg:border-white/10 relative group">
+                                <a class="lg:py-7.5 py-2 xl:px-5 lg:px-2 relative lg:inline-block block text-lg font-medium lg:text-white text-heading hover:text-secondary" href="contact.html"><span class="inline-block">Contact</span></a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden block max-lg:p-5 text-center mt-auto">
+                            <ul>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-facebook-f" target="_blank" href="https://www.facebook.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-twitter" target="_blank" href="https://twitter.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-linkedin-in" target="_blank" href="https://www.linkedin.com"></a></li>
+                                <li class="inline-block mx-0.5"><a class="size-10 leading-10! border border-black/10 dark:border-white/10 text-center text-heading fab fa-instagram" target="_blank" href="https://www.instagram.com"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE LOGO -->
+                    <div class="flex lg:justify-end items-center z-9 h-20 xl:pl-8 ms-auto shrink-0">
+                        <a href="index.html" class="flex items-center">
+                            <img src="assets/images/tourific-kashi-logo.png" alt="Tourific Mangalmay Kashi" class="tf-logo-side">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+	<!-- HEADER END -->
+	<div id="smooth-wrapper">
+		<div id="smooth-content">
+			<!-- CONTENT START -->
+			<div class="page-content">
+
+				<!-- INNER PAGE BANNER -->
+				<div class="relative bg-cover bg-center w-full bg-white overflow-hidden" style="background-image:url('assets/TourP/bgall.jpg'); background-position:center bottom;">
+						<div class="opacity-100 absolute left-0 top-0 size-full" style="background:rgba(0,0,0,.35);"></div>
+						<div class="flex w-full lg:h-160 md:h-135 h-100 pb-10 items-baseline mx-auto">
+							<div class="relative md:mt-60 mt-45 flex items-center justify-center w-full flex-col z-5">
+								<div class="tf-hero-glass">
+									<div>
+									<h2 class="tf-hero-title lg:text-120 md:text-104 text-56 relative text-white!">Dubai Tour</h2>
+								</div>
+								<!-- BREADCRUMB ROW -->                            
+								<div>
+									<ul class="tf-hero-breadcrumb inline-block">
+										<li class="tf-breadcrumb-home md:text-32 text-24 relative inline-block font-semibold text-white">
+											<a href="index.html" class="text-white hover:text-citrusyellow duration-300">Home</a></li>
+									</ul>
+								</div>
+								</div>
+							</div>
+							<!-- BREADCRUMB ROW END -->                        
+						</div>
+						<div class="h-50 w-full absolute top-50 left-0 z-1">            
+							<div class="inline-block whitespace-nowrap animate-moveCloud">
+								<img src="assets/images/inr-banner-cloud.png" alt="Image" class="h-47.5">
+							</div>
+						</div>
+						<div class="absolute w-1/2 right-0 top-0 bottom-0 z-1">
+							<div class="mt-60 animate-slide-right"><img src="assets/images/airplane.png" alt="Image" class="animate-slide-top-fast" width="378" height="146"></div>
+						</div>
+						<div class="absolute right-11.25 bottom-16.25 animate-slide-top2"><img src="assets/images/hotballon-Left.png" alt="Image" class="md:w-21 w-10" width="84" height="121"></div>
+						<div class="absolute md:-right-15 -right-10 top-41.25 animate-slide-top"><img src="assets/images/hotballon-right.png" alt="Image" class="md:w-37.5 w-20"
+						width="230" height="333"></div>
+					</div>
+				<!-- INNER PAGE BANNER END -->
+				
+				<!-- TOUR DETAIL START -->
+				<div class="tpd-wrap">
+
+					<!-- TOUR QUICK INFO BAR END -->
+
+					<!-- TOUR DESCRIPTION -->
+					<div class="tpd-body">
+						<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Dubai Tour - <span class="text-citrusyellow">5 Nights / 6 Days</span></h2>
+						<p class="text-base mb-4">Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.</p>
+						<p class="text-base">Known for its soaring skyscrapers that kiss the heavens, Dubai boasts the iconic Burj Khalifa, a testament to human ingenuity! But wait, there’s more! Picture pristine beaches where the sun embraces the sand with warm affection. Shopaholics, rejoice!</p>
+						<!-- IMAGE SLIDER --></br>
+						<div class="tpd-gallery">
+							<div class="tpd-gallery-item">
+								<img src="assets/TourP/Dubai 1.webp" alt="Bali Beach" loading="lazy">
+							</div>
+
+							<div class="tpd-gallery-item">
+								<img src="assets/TourP/Dubai 3.jpg" alt="Bali Destination" loading="lazy">
+							</div>
+
+							<div class="tpd-gallery-item">
+								<img src="assets/TourP/Dubai 4.jpg" alt="Bali Scenery" loading="lazy">
+							</div>
+						</div>
+						<!-- IMAGE SLIDER END -->
+					</div>
+					<!-- TOUR DESCRIPTION END -->
+
+					<!-- PLACES TO VISIT -->
+					<div class="tpd-places">
+						<div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Places To <span class="text-citrusyellow">Visit</span></h2>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert">
+							</div>
+						</div>
+						<div class="tpd-tl" id="tpdTimeline">
+							<div class="tpd-tl-list">
+								<!-- LINE (drawn on scroll) -->
+								<span class="tpd-tl-line"><span class="tpd-tl-fill"></span></span>
+								<!--PLACE-1-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">01</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Burj Khalifa</h3>
+										<p>Burj Khalifa is the tallest building in the world, rising to about 830 metres above Downtown Dubai. Its high observation decks offer sweeping views of the city skyline, the desert and the Arabian Gulf, and the Dubai Fountain performs at its foot.</p>
+									</div>
+								</div>
+								<!--PLACE-2-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">02</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Dhow Cruise</h3>
+										<p>A dhow cruise takes you along Dubai Creek or Dubai Marina on a traditional wooden boat, usually in the evening. Guests enjoy a dinner on board, soft music and views of the lit-up skyline from the water.</p>
+									</div>
+								</div>
+								<!--PLACE-3-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">03</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Desert Safari</h3>
+										<p>A desert safari takes you dune bashing in a 4x4 across the golden dunes outside Dubai, followed by camel rides, sandboarding and sunset views. The evening usually ends at a desert camp with a barbecue dinner and live entertainment.</p>
+									</div>
+								</div>
+								<!--PLACE-4-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">04</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Museun Of Future</h3>
+										<p>The Museum of the Future is a landmark museum in Dubai, housed in a striking ring-shaped building covered in Arabic calligraphy. Its immersive exhibits explore technology, space, ecology and what life could look like in the decades ahead.</p>
+									</div>
+								</div>
+								<!--PLACE-5-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">05</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Ferrari World</h3>
+										<p>Ferrari World is a Ferrari-themed amusement park on Yas Island in Abu Dhabi, about an hour’s drive from Dubai. It is home to Formula Rossa, one of the fastest roller coasters in the world, along with family rides, simulators and shows.</p>
+									</div>
+								</div>
+								<!--PLACE-6-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">06</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Miracle Garden</h3>
+										<p>Dubai Miracle Garden is one of the largest flower gardens in the world, with millions of blooms arranged into walkways, arches and giant floral sculptures, including a full-size aircraft covered in flowers. It is usually open during the cooler months of the year.</p>
+									</div>
+								</div>
+								<!--PLACE-7-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">07</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Global Village</h3>
+										<p>Global Village is a seasonal cultural and entertainment park in Dubai with pavilions from countries around the world. Visitors can shop, try street food from many cuisines, watch live shows and enjoy rides, usually from around October to April.</p>
+									</div>
+								</div>
+								<!--PLACE-8-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">08</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Ski Dubai</h3>
+										<p>Ski Dubai is an indoor ski resort inside the Mall of the Emirates, with real snow, slopes for different levels, a snow park and a penguin encounter, all in the middle of the desert.</p>
+									</div>
+								</div>
+								<!--PLACE-9-->
+								<div class="tpd-tl-item">
+									<div class="tpd-tl-badge">
+										<span class="tpd-tl-num">09</span>
+										<small>Place</small>
+									</div>
+									<div class="tpd-tl-text">
+										<h3>Dubai Gold Souk</h3>
+										<p>The Dubai Gold Souk in Deira is a traditional covered market near Dubai Creek, known for its dazzling displays of gold, silver, diamond and pearl jewellery in hundreds of small shops.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- PLACES TO VISIT END -->
+
+					<!-- INCLUSIONS -->
+					<div class="tpd-inc-sec">
+						<div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Our Package : <span class="text-citrusyellow">All Inclusive</span></h2>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert">
+							</div>
+						</div>
+						<div class="tpd-inc-grid">
+							<!--INCLUSION-1-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">01</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-suitcase-rolling"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Tour Package : All Inclusive</h3>
+									<p>Everything is covered in one price, with no hidden costs.</p>
+								</div>
+							</div>
+							<!--INCLUSION-2-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">02</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-parachute-box"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Sightseeing</h3>
+									<p>Guided visits to the best landmarks, souks and desert experiences.</p>
+								</div>
+							</div>
+							<!--INCLUSION-3-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">03</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-hotel"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Hotel Twin Sharing Basis</h3>
+									<p>Comfortable hotel stays on a twin sharing basis.</p>
+								</div>
+							</div>
+							<!--INCLUSION-4-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">04</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-pizza-slice"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Food Veg &amp; Non Veg</h3>
+									<p>Fresh veg and non veg meals throughout the trip.</p>
+								</div>
+							</div>
+							<!--INCLUSION-5-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">05</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-car-side"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Transfers in Private Car</h3>
+									<p>Private car for every transfer and sightseeing day.</p>
+								</div>
+							</div>
+							<!--INCLUSION-6-->
+							<div class="tpd-inc-card tpd-reveal">
+								<span class="tpd-inc-num">06</span>
+								<div class="tpd-inc-icon">
+									<i class="fa-solid fa-plane"></i>
+								</div>
+								<div class="tpd-inc-text">
+									<h3>Air Tickets</h3>
+									<p>Flight tickets arranged for a hassle-free journey.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- INCLUSIONS END -->
+
+					<!-- BOOKING FORM -->
+					<div class="tpd-booking">
+						<div class="tpd-booking-text tpd-reveal" style="color:#fff !important;">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-5" style="color:#fff !important;">Book Your <span style="color:#fff !important;">Dubai Tour</span></h2>
+							<p class="text-base mb-7.5" style="color:#fff !important;">Fill in your details and our team will get back to you with the best itinerary and price for your travel dates.</p>
+							<ul class="tpd-highlights">
+								<li style="color:#fff !important;"><i class="fa-solid fa-circle-check" style="color:#fff !important;"></i>5 Nights / 6 Days</li>
+								<li style="color:#fff !important;"><i class="fa-solid fa-circle-check" style="color:#fff !important;"></i>All Inclusive Package</li>
+								<li style="color:#fff !important;"><i class="fa-solid fa-circle-check" style="color:#fff !important;"></i>Private Car Transfers</li>
+								<li style="color:#fff !important;"><i class="fa-solid fa-circle-check" style="color:#fff !important;"></i>Customised Itinerary</li>
+							</ul>
+						</div>
+						<form class="tpd-form tpd-reveal" method="post" action="#">
+							<h3>Booking Form</h3>
+							<input type="hidden" name="tour" value="Dubai Tour">
+							<div class="tpd-field">
+								<label for="bk-name">Name <span>*</span></label>
+								<input type="text" id="bk-name" name="name" required autocomplete="name">
+							</div>
+							<div class="tpd-field-row">
+								<div class="tpd-field">
+									<label for="bk-email">Email <span>*</span></label>
+									<input type="email" id="bk-email" name="email" required autocomplete="email">
+								</div>
+								<div class="tpd-field">
+									<label for="bk-phone">Phone <span>*</span></label>
+									<input type="tel" id="bk-phone" name="phone" required autocomplete="tel">
+								</div>
+							</div>
+							<div class="tpd-field">
+								<label for="bk-message">Message</label>
+								<textarea id="bk-message" name="message" rows="4"></textarea>
+							</div>
+							<button type="submit" class="site-button">Submit</button>
+						</form>
+					</div>
+					<!-- BOOKING FORM END -->
+
+					<!-- ABOUT + WHY US -->
+					<div class="tpd-about">
+
+						<!-- WHY US -->
+						<div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Why Choose <span class="text-citrusyellow">Us</span></h2>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert">
+							</div>
+						</div>
+						<div class="tpd-why">
+							<!--WHY-1-->
+							<div class="tpd-why-card tpd-reveal">
+								<div class="tpd-why-icon">
+									<i class="fa-solid fa-landmark"></i>
+								</div>
+								<div>
+									<h3>Trusted Name in Dubai Tour Packages</h3>
+									<p>Years of experience planning Dubai trips.</p>
+								</div>
+							</div>
+							<!--WHY-2-->
+							<div class="tpd-why-card tpd-reveal">
+								<div class="tpd-why-icon">
+									<i class="fa-solid fa-handshake"></i>
+								</div>
+								<div>
+									<h3>Best B2C Service Provider</h3>
+									<p>Friendly, direct service for every traveller.</p>
+								</div>
+							</div>
+							<!--WHY-3-->
+							<div class="tpd-why-card tpd-reveal">
+								<div class="tpd-why-icon">
+									<i class="fa-solid fa-hand-holding-dollar"></i>
+								</div>
+								<div>
+									<h3>Value for Money Packages</h3>
+									<p>Quality stays and sightseeing at fair prices.</p>
+								</div>
+							</div>
+							<!--WHY-4-->
+							<div class="tpd-why-card tpd-reveal">
+								<div class="tpd-why-icon">
+									<i class="fa-solid fa-users-gear"></i>
+								</div>
+								<div>
+									<h3>Customized Solutions</h3>
+									<p>Plans tailored to your dates, budget and group.</p>
+								</div>
+							</div>
+							<!--WHY-5-->
+							<div class="tpd-why-card tpd-reveal">
+								<div class="tpd-why-icon">
+									<i class="fa-solid fa-user-lock"></i>
+								</div>
+								<div>
+									<h3>Personalized Services</h3>
+									<p>Dedicated support from booking to return.</p>
+								</div>
+							</div>
+						</div>
+						<!-- WHY US END -->
+					</div>
+					<!-- ABOUT + WHY US END -->
+
+					<!-- TOUR PACKAGES -->
+					<div class="tpd-packages">
+						<div class="text-center max-w-150 mx-auto md:mb-15 mb-7.5">
+							<h2 class="xl:text-46 md:text-40 text-3xl mb-2.5">Dubai Tour <span class="text-citrusyellow">Packages</span></h2>
+							<div class="-mt-7">
+								<img src="assets/images/background/Title-Separator.png" alt="Image" class="w-117.5 inline-block dark:invert">
+							</div>
+						</div>
+						<div class="tpd-pk-grid">
+							<!--PACKAGE-1-->
+							<div class="tpd-card">
+								<a href="https://tourific.in/dubai/"><img src="assets/TourP/dubai1.jpg" alt="Dubai Tour Package" loading="lazy"></a>
+								<h3>Dubai Tour Package</h3>
+								<p class="tpd-dur">Duration: 3 Nights / 4 Days</p>
+								<div class="tpd-feat">
+									<div><i class="fa-solid fa-plane"></i><span>Flight</span></div>
+									<div><i class="fa-solid fa-utensils"></i><span>Meal</span></div>
+									<div><i class="fa-solid fa-bed"></i><span>Hotels</span></div>
+									<div><i class="fa-solid fa-car-side"></i><span>Transfer</span></div>
+								</div>
+								<div class="tpd-btn">
+									<a href="contact.html" class="site-button btn-sm">Book Now</a>
+								</div>
+							</div>
+							<!--PACKAGE-2-->
+							<div class="tpd-card">
+								<a href="https://tourific.in/dubai/"><img src="assets/TourP/dubai2.jpg" alt="Dubai Super Saver Tour Package" loading="lazy"></a>
+								<h3>Dubai Super Saver Tour Package</h3>
+								<p class="tpd-dur">Duration: 4 Nights / 5 Days</p>
+								<div class="tpd-feat">
+									<div><i class="fa-solid fa-plane"></i><span>Flight</span></div>
+									<div><i class="fa-solid fa-utensils"></i><span>Meal</span></div>
+									<div><i class="fa-solid fa-bed"></i><span>Hotels</span></div>
+									<div><i class="fa-solid fa-car-side"></i><span>Transfer</span></div>
+								</div>
+								<div class="tpd-btn">
+									<a href="contact.html" class="site-button btn-sm">Book Now</a>
+								</div>
+							</div>
+							<!--PACKAGE-3-->
+							<div class="tpd-card">
+								<a href="https://tourific.in/dubai/"><img src="assets/TourP/dubai3.jpg" alt="Wonderful Dubai Gateway Tour Package" loading="lazy"></a>
+								<h3>Wonderful Dubai Gateway Tour Package</h3>
+								<p class="tpd-dur">Duration: 5 Nights / 6 Days</p>
+								<div class="tpd-feat">
+									<div><i class="fa-solid fa-plane"></i><span>Flight</span></div>
+									<div><i class="fa-solid fa-utensils"></i><span>Meal</span></div>
+									<div><i class="fa-solid fa-bed"></i><span>Hotels</span></div>
+									<div><i class="fa-solid fa-car-side"></i><span>Transfer</span></div>
+								</div>
+								<div class="tpd-btn">
+									<a href="contact.html" class="site-button btn-sm">Book Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- TOUR PACKAGES END -->
+
+				</div>
+				<!-- TOUR DETAIL END -->
+
+			</div>
+			<!-- CONTENT END -->
+			<!-- FOOTER START -->
+			<footer class="pt-20 bg-primary bg-cover bg-[url(../images/background/ftr-dark-bg.png)]">
+                <div class="container">
+                    <div class="sm:pt-20 pt-6 pb-4 text-white/06 border-b border-primary dark:border-white/15">
+                        <div class="grid grid-cols-12 gap-y-6">
+
+                            <!-- Logo + About + Social -->
+                            <div class="lg:col-span-3 col-span-12 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <div class="mb-6 block">
+                                        <a href="index.html"><img src="assets/images/tourific-logo.png" alt="Tourific - A travel company" class="tf-footer-logo" loading="lazy"></a>
+                                    </div>
+                                    <p class="sm:pr-6 mb-4 text-base text-white">Tourific Travel Services is a multifaceted travel agency and tour operator providing totally reliable competitively tour and travel solutions.</p>
+                                    <ul class="mt-5 flex flex-wrap gap-y-2">
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                        <li class="inline-flex xl:size-11.5 size-10.5 bg-citrusyellow xl:mr-2.5 mr-1.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group"><a class="inline-flex size-9 bg-primary rounded-4xl justify-center items-center duration-500 text-white text-lg group-hover:rounded-2lg" href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Quick Links</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="index.html">Home</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="about-1.html">About Us</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="tour-1-grid.html">Domestic</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="international.html">International</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="wildlife.html">Wildlife</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Explore -->
+                            <div class="lg:col-span-2 sm:col-span-6 col-span-6 mb-5 sm:px-3.75 tf-footer-col">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Explore</h3>
+                                    <ul>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="services.html">Services</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="testimonial.html">Reviews</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="videos.html">Videos</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="gallery.html">Gallery</a></li>
+                                        <li class="block w-full py-0.5 overflow-hidden"><a class="pb-1.5 block duration-500 text-base text-paleaqua font-semibold hover:text-citrusyellow" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact Us -->
+                            <div class="lg:col-span-5 col-span-12 sm:px-3.75 tf-footer-col tf-footer-contact">
+                                <div class="mb-6">
+                                    <h3 class="!text-white mb-6 relative xl:text-28 text-2xl">Contact Us</h3>
+                                    <ul>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-phone text-lg text-white"></i>
+                                            </div>
+                                            <a href="tel:+919021135384"><span class="text-xl text-citrusyellow font-semibold">+91 9021135384</span></a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-center">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0">
+                                                <i class="fa-solid fa-envelope text-lg text-white"></i>
+                                            </div>
+                                            <a class="text-paleaqua font-semibold text-base" href="mailto:archana@tourific.in">archana@tourific.in</a>
+                                        </li>
+                                        <li class="mb-4 relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Pune:- </b>397/1/2, Building No. 7A, Flat No.2, 'Agrasen Nagar' Housing Society, Kundan Nagar, Opp. Atlas Copco, Dapodi, Pune-411012</span>
+                                        </li>
+                                        <li class="relative flex items-start">
+                                            <div class="size-11 min-w-11 rounded-full mr-3.5 bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                <i class="fa-solid fa-location-dot text-lg text-white"></i>
+                                            </div>
+                                            <span class="text-paleaqua font-semibold text-base leading-relaxed"><b class="text-citrusyellow">Nashik:- </b>SHREE SATYANARAYAN ROONGTA FORUM Shop No.6001 Near City Center Mall, Dr. Babasaheb Ambedkar Rd, near DR BR, Lavate Nagar, Parijat Nagar, Nashik, Maharashtra 422005</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="py-10 text-white relative z-1 font-normal after:absolute after:bg-primary after:max-w-135 after:h-px after:left-1/2 after:top-0 after:-translate-x-1/2">
+                        <div class="container">
+                            <p class="copyrights-text text-center text-sm font-semibold">© <span class="current-year">2026</span> <a href="index.html"><span class="inline-block text-citrusyellow uppercase text-center text-sm font-semibold">Tourific Travel</span></a> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+			<!-- FOOTER END -->
+		</div>
+	</div>
+	<!-- BUTTON TOP START -->
+	<button class="scroltop" aria-label="Scroll to top"><span class="fa fa-angle-up  relative" id="btn-vibrate" aria-hidden="true"></span></button>
+	<div id="offcanvas-right" class="fixed top-0 right-0 z-9999999 h-screen overflow-y-auto transition-transform translate-x-full bg-black/20 backdrop-blur-[5px] sm:max-w-125 max-w-88 custom-scroll">
+		<button type="button" class="absolute right-0 top-6 text-[#443935] bg-citrusyellow text-base size-7 cursor-pointer rounded m-6.25" data-drawer-hide="offcanvas-right" aria-label="Close">
+			<i class="fa-solid fa-xmark" aria-hidden="true"></i>
+		</button>
+		<div class="pt-30 pb-10 px-8">
+			<div class="">
+				<div class="mb-15">
+					<img src="assets/images/logo-dark.png" alt="Image" class="max-w-33.5">
+				</div>
+				<div class="trv-side-pnl-content">
+					<div class="mb-15">
+						<h3 class="text-28 !text-white mb-5">It's Time to Traveling</h3>
+						<h3 class="!text-secondary text-5xl mb-5 uppercase">Plan Your Next Holiday</h3>
+						<p class="text-base !text-white/50">Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing.</p>   
+					</div>
+					<h3 class="text-28 !text-white mb-5">Don't miss out this offers!</h3>
+					<ul class="flex justify-between pb-10 mb-10 relative after:w-75 after:bg-white/15 after:h-px after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2">
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$199</h2>
+							<span class="!text-white text-lg font-medium font-title">Basic Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$299</h2>
+							<span class="!text-white text-lg font-medium font-title">Pro Plan</span>
+						</li>
+						<li>
+							<h2 class="!text-secondary text-34 mb-2">$399</h2>
+							<span class="!text-white text-lg font-medium font-title">Full Plan</span>
+						</li>
+					</ul>
+					<ul class="mt-5">
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.x.com">
+								<i class="fa-brands fa-x-twitter group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.facebook.com">
+								<i class="fa-brands fa-facebook group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.instagram.com">
+								<i class="fa-brands fa-instagram group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+						<li class="inline-flex size-11.5 bg-citrusyellow mr-2.5 rounded-4xl justify-center items-center duration-500 hover:rounded-2lg group">
+							<a class="inline-flex size-9 bg-primary rounded-full justify-center items-center duration-500 text-white text-lg" href="https://www.pinterest.com/">
+								<i class="fa-brands fa-pinterest group-hover:rotate-y-[360deg] group-hover:scale-[1.2] !inline-block duration-[0.5s] group-hover:text-citrusyellow"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendor/gsap/gsap.min.js"></script>
+<script src="assets/vendor/gsap/ScrollSmoother.js"></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/masonry/masonry-4.2.2.js"></script>
+<script src="assets/vendor/masonry/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.js"></script>
+<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendor/nouislider/nouislider.min.js"></script>
+<script src="assets/vendor/xmenu/xmenu.js"></script>
+<script src="assets/vendor/lightgallery/dist/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="assets/vendor/lightgallery/dist/plugins/zoom/lg-zoom.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="assets/js/theia-sticky-sidebar.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/dz.carousel.js"></script>
+<script src="assets/js/lc_lightbox.lite.js"></script>
+<script src="assets/js/dz.ajax.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<!-- TOUR DETAIL PAGE SCRIPT -->
+<script>
+	window.addEventListener('load', function () {
+		/* Image slider */
+		if (typeof Swiper !== 'undefined' && document.querySelector('.tpd-swiper')) {
+			new Swiper('.tpd-swiper', {
+				loop: true,
+				spaceBetween: 20,
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				autoplay: { delay: 3500, disableOnInteraction: false },
+				pagination: { el: '.tpd-swiper .swiper-pagination', clickable: true },
+				navigation: { nextEl: '.tpd-next', prevEl: '.tpd-prev' }
+			});
+		}
+		/* Scroll reveal */
+		var items = document.querySelectorAll('.tpd-reveal');
+		if ('IntersectionObserver' in window) {
+			var io = new IntersectionObserver(function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('tpd-in');
+						io.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.15 });
+			items.forEach(function (el, i) {
+				el.classList.add('tpd-pre');
+				el.style.transitionDelay = ((i % 3) * 0.12) + 's';
+				io.observe(el);
+			});
+		}
+		/* Places To Visit: line drawn + points shown one by one on scroll */
+		var tl = document.getElementById('tpdTimeline');
+		if (tl) {
+			var list = tl.querySelector('.tpd-tl-list');
+			var line = tl.querySelector('.tpd-tl-line');
+			var fill = tl.querySelector('.tpd-tl-fill');
+			var tItems = tl.querySelectorAll('.tpd-tl-item');
+			var half = 26, maxReach = 0, ticking = false;
+			tl.classList.add('tpd-tl-ready');
+			function layoutLine() {
+				line.style.height = tItems[tItems.length - 1].offsetTop + 'px';
+			}
+			function updateLine() {
+				ticking = false;
+				var reach = window.innerHeight * 0.7 - list.getBoundingClientRect().top;
+				if (reach > maxReach) maxReach = reach;
+				var total = tItems[tItems.length - 1].offsetTop;
+				fill.style.height = Math.max(0, Math.min(total, maxReach - half)) + 'px';
+				tItems.forEach(function (it) {
+					if (maxReach >= it.offsetTop + half) it.classList.add('tpd-on');
+				});
+			}
+			function requestUpdate() {
+				if (!ticking) { ticking = true; requestAnimationFrame(updateLine); }
+			}
+			layoutLine();
+			updateLine();
+			window.addEventListener('scroll', requestUpdate, { passive: true });
+			window.addEventListener('resize', function () { layoutLine(); requestUpdate(); });
+		}
+	});
+</script>
+
+</body>
+</html>
